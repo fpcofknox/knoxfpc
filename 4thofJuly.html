@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+    <style>
+        /* Scrollbar CSS  */
+        ::-webkit-scrollbar {
+            width: 1.5rem;
+         }
+         ::-webkit-scrollbar-track {
+            background: black;
+            border-left: 1px solid white;
+                }
+            ::-webkit-scrollbar-thumb {
+                background: #02060c;
+                border: 5px solid white;
+                border-radius: 5px;
+                box-shadow: 1px 1px 5px 1px white;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                box-shadow: inset 1px 20px 10px white,
+                            1px 1px 10px 10px white;
+            }
+        body {
+            background: black;
+        }
+        
+        .img-gallery {
+            width: 80%;
+            margin: 100px auto 50px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 30px;
+        }
+        .img-gallery img {
+            object-fit: contain;
+            width: 100%;
+            cursor: pointer;
+        }
+        img:hover {
+            transform: scale(0.8) rotate(-15deg);
+            border-radius: 20px;
+            transition: 0.3s ease-in-out;
+            box-shadow: 5px 5px 18px white;
+        }
+        img {
+            border: 5px solid white;
+            border-radius: 10px;
+        }
+        .home {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .home a{
+            text-decoration: none;
+            font-family: 'Dancing Script', cursive;
+            color: white;
+            font-size: 5rem;
+            animation: animate 5s linear infinite;
+        }
+        @keyframes animate 
+        {
+            0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+            {
+                color: #192C49;
+                text-shadow: none;
+            }  
+            18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+            {
+                color: white;
+                text-shadow: 0 0 10px #70d0ee,
+                0 0 10px #70d0ee,
+                0 0 10px #70d0ee,
+                0 0 10px #70d0ee,
+                0 0 10px #70d0ee;
+            }
+        }
+    </style>
+</head>
+    <div class="home">
+        <a href="2minimalFPC.html">Home</a><a href="C:\Users\Nathaniel Hollis\Desktop\Website\PicFolder.html">Gallery</a>
+        </div>
+    <div class="img-gallery">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_200623.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_200635.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_200646.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_200657.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_200708.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_200726.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_200811.JPG" height="auto">
+
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_200920.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_200953.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_201001.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_201021.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_201031.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_201120.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_201227.JPG" height="auto">
+
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_201751.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_202514.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_202916.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_204549.JPG" height="auto">
+        <img src="C:\Users\Nathaniel Hollis\Desktop\Website\good times\20230704_205427.JPG" height="auto">
+    </div>
+    </div>
+<body>
+
+</body>
+</html>
