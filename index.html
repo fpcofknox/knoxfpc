@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
@@ -14,30 +12,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
 
-
-
-    <title>First Pentecostal Church of Knox</title>
+    <title>Document</title>
     <style>
         body{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background: linear-gradient(180deg, hsl(260, 18%, 52%, .65) 0%, #000 ), url("C:/Users/Nathaniel Hollis/Desktop/Website/2snowchurchpic.jpg");
+            background: linear-gradient(180deg, hsl(260, 18%, 52%, .65) 0%, #000 100%), url("2snowchurchpic.jpg");
             background-repeat: no-repeat;
-
-
-
-
-
+            background-size:contain;
             color: white;
+            text-wrap: balance;
             font-family:'Ubuntu', sans-serif;
             text-shadow: 4px 4px 5px #110800;
+            font-size: 3vw;
         }
 
 
 
-         /* Scrollbar CSS  */
-         ::-webkit-scrollbar {
+
+
+        /* <!-- header element --> */
+        .header{
+        }
+        .logo{
+        }
+
+
+ /* Scrollbar CSS  */
+ ::-webkit-scrollbar {
             width: 1.5rem;
          }
          ::-webkit-scrollbar-track {
@@ -55,52 +55,17 @@
                             1px 1px 10px 10px white;
             }
 
-
-
-
-        .header{
-            display: flex;
-            border-bottom: 5px solid white;
-            background: rgba(0, 0, 0, 0.8);
-            box-shadow: 5px 5px 10px 5px white;
-            padding: 20px;
-        }
-        .logo{
-            flex: 1 1 61px;
-        }
-        .navbar a{
-            margin: 10px;
-            flex-direction: column;
-            font-size: 1.5rem;
-            flex: 1 1 10%;
-            text-decoration: none;
-            justify-content: space-between;
-            align-items: end;
-            
-        }
-        .navbar a:hover {
-            color: #FFF;
-            text-shadow: 0 0 10px #70d0ee,
-                        0 0 10px #70d0ee,
-                        0 0 20px #70d0ee,
-                        0 0 40px white,
-                        0 0 60px white,
-                        0 0 100px white,
-                        0 0 120px white,
-                        0 0 160px white;
-        }
-
-
-
-
-/* Hero landing page */
+        /* <!-- hero page element --> */
         .welcome{
+            width: auto;
+            height: 100vw;
             display: flex;
+            flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            font-size: clamp(16px, 6vw, 61px);
+            font-size: 3vw;
             font-family: 'Dancing Script', cursive;
             color: white;
             text-shadow: 0 0 10px #70d0ee,
@@ -108,22 +73,19 @@
             0 0 10px #70d0ee,
             0 0 10px #70d0ee,
             0 0 10px #70d0ee;
-            height: 100vh;   
-
         }
         .scripture{
             display: flex;
             justify-content: center;
             text-align: center;
+            flex-wrap: wrap;
             font-size: clamp(16px, 4vw, 30px);
             margin-bottom: 50px;
             font-family:'Ubuntu', sans-serif;
         }
 
 
-
-
- /* about us containter */
+        /* <!-- about us element --> */
         .about-us{
             background: #6F809A;
             display: flex;
@@ -131,14 +93,15 @@
             flex-direction: column;
             font-size: 1rem;
             text-align: center;
+            text-wrap: balance;
             font-size: clamp(20px, 7vw, 40px);
             margin: 0px 50px 0px 50px;
             padding: 20px;
-            border: 11px solid white;
-            border-radius: 30px;
+            border: 7px solid white;
+            border-radius: 20px;
             box-shadow: 2px 2px 25px 7px #FFF;
             }
-        .about-us-text {
+            .about-us-text {
             justify-content: center;
             flex-direction: column;
             font-size: clamp(20px, 7vw, 30px);
@@ -148,7 +111,7 @@
         }
         .Repentance{
             font-family: 'Dancing Script', cursive;
-            font-size: clamp(20px, 7vw, 40px);
+            font-size: 7vw;
             color: red;
             text-shadow: 0 0 10px orange,
                 0 0 10px orange,
@@ -157,11 +120,9 @@
                 0 0 10px orange;
             margin: 20px;
          }
-
-
         .Baptism{
             font-family: 'Dancing Script', cursive;
-            font-size: clamp(20px, 7vw, 40px);
+            font-size: 7vw;
             color: blue;
             text-shadow: 0 0 10px lightblue,
                 0 0 10px lightblue,
@@ -172,7 +133,7 @@
         }
         .Spirit-Infilling{
             font-family: 'Dancing Script', cursive;
-            font-size: clamp(20px, 7vw, 40px);
+            font-size: 7vw;
             color: green;
             text-shadow: 0 0 10px lime,
                 0 0 10px lime,
@@ -184,7 +145,8 @@
 
 
 
-/* Title banners */
+
+
         .ban-come-worship-with-us,
         .ban-meet-our-staff,
         .ban-come-have-fun,
@@ -192,7 +154,7 @@
             display: flex;
             justify-content: center;
             text-align: center;
-            font-size: clamp(30px, 9vw, 61px);
+            font-size: clamp(20px, 9vw, 61px);
             font-family: 'Dancing Script', cursive;
             color: white;
             text-shadow: 0 0 10px #70d0ee,
@@ -204,108 +166,99 @@
 
 
 
-/* sections for pictures */
+        /* <!-- pictures of people in worship service --> */
+        .worship-pic,
+        .picture-gallery{
+            padding: 5px;
+        }
         .picture-gallery,
-        .worship-pic{
-            border: 5px solid red;
-            height: 200px;
+        .PictureElement{
+            padding: 5px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            overflow: scroll;
+            gap: 10px;
+            border: 5px solid white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 25px 7px #FFF;
+            margin: 3%;
+
         }
-
-
-
-
-/* staff containers LEFT */
-        .staff-pic-left{
-            /* background: #000; */
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            justify-content: space-evenly;
-            padding: 20px;
+        .image1{
+            padding: 5px;
+            border: 5px solid white;
+            border-radius: 3px;
         }
 
 
 
 
 
-/* staff containers RIGHT */
-        .staff-pic-right{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            justify-content: space-evenly;
-            padding: 20px;
+        .staff-element{
+            padding: 5px;
+            margin: 3%;
         }
-
-
-
-
-/* Staff picture element */
         .staff-picture{
-            background: #A4B0C1;
-            width: 625px;
-            height: 450px;
-            display: flex;
-            justify-content: space-evenly;
-            border: 11px solid white;
-            border-radius: 30px;
+            border-radius: 20px;
+            height: 200px;
+            width: 200px;
+            padding: 20px;
+        }
+        .staff{
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            object-position: left;
+            overflow: hidden;
+            border: 5px solid white;
             box-shadow: 2px 2px 25px 7px #FFF;
         }
-
-
-
-
-
-/* Staff biography text element */
-         .bio-text{
+        .bio-text{
             background: #6F809A;
-            width: 625px;
-            height: 450px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-direction: column;
-            overflow: auto;
-            text-align: center;
-            justify-content: center;
-            padding: 20px;
-            margin: 30px;
-            font-size: clamp(20px, 3vw, 30px);
-            border: 11px solid white;
-            border-radius: 30px;
+            border: 7px solid white;
+            border-radius: 20px;
             box-shadow: 2px 2px 25px 7px #FFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
         .text{
-            overflow: auto;
-            height: 100%;
+            margin: 3%;
         }
 
 
 
 
-/* Pictures of church events */
 
-
-
-
-
-/* event container  */
         .events{
-            display: flex;
-            margin-bottom: 50px;
-            font-size: clamp(20px, 3vw, 30px);
-
+            margin: 3%;
         }
 
 
 
 
- /* calender container */
+        .color-key-calender{
+            background: linear-gradient(180deg, hsla(194, 18%, 52%, 0.65) 0%, #000);
+            border-radius: 10px;
+            width: 50%;
+            display: flex;
+            flex-direction:column;
+            padding: 0;
+            margin: 3%;
+        }
+        #red{
+            background: red;
+        }
+        #green{
+            background: lime;
+        }
+
+
+
+
+        /* calender container */
         .calender {
             margin: auto;
             width: 800px;
@@ -335,137 +288,42 @@
             color: #6F809A;
             font-weight: 100;
         }
+        #holiday {
+            background: red;
+        }
 
+        
 
 
 
 
         .dropbox{
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             text-align: center;
-            margin: 50px;
-            font-size: clamp(20px, 3vw, 30px);
-
+            justify-content: center;
+            align-items: center;
+            margin: 10%;
         }
         .dropbox a{
-            display: flex;
-            width: 170px;
-            padding: 5px;
-            margin: auto;
-            justify-content: center;
-            align-items: center;
-            border: 3px solid white;
-            border-radius: 5px;
-            background: black;
-            font-size: clamp(20px, 3vw, 30px);
-            box-shadow:inset  1px 1px 16px 2px white,
-                         1px 1px 16px 2px white;
-        }
-        .dropbox a:hover {
+            margin-top: 12px;
+            text-decoration: none;
             color: white;
-            text-shadow: 0 0 10px #70d0ee,
-                        0 0 10px #70d0ee,
-                        0 0 20px #70d0ee,
-                        0 0 40px white,
-                        0 0 60px white,
-                        0 0 100px white,
-                        0 0 120px white,
-                        0 0 160px white;
-        }
-
-
-
-
-/* service times container */
-        .service-times{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            justify-content: center;
-            font-size: clamp(20px, 3vw, 30px);
-        }
-        .service1{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center;
-            border: 5px solid white;
-            border-radius: 20px;
-            box-shadow:inset  1px 1px 16px 2px white,
-                         1px 1px 16px 2px white;
-            padding: 20px;
-            margin: 5px;
-        }
-        .service2{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center;
-            padding: 20px;
-            border: 5px solid white;
-            border-radius: 20px;
-            box-shadow:inset  1px 1px 16px 2px white,
-                         1px 1px 16px 2px white;
-            padding: 20px;
-            margin: 10px;
-        }
-        .service3{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center;
-            border: 5px solid white;
-            border-radius: 20px;
-            box-shadow:inset  1px 1px 16px 2px white,
-                         1px 1px 16px 2px white;
-            padding: 20px;
-            margin: 5px;
-        }
-        .service4{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center;
-            border: 5px solid white;
-            border-radius: 20px;
-            box-shadow:inset  1px 1px 16px 2px white,
-                         1px 1px 16px 2px white;
-            padding: 20px;
-            margin: 5px;
-        }
-       
-
-
-
-/* google maps container */
-        .google-maps{
-            height: 450px;
-        }
-
-
-
-/* Pastors phone number */
-        .google-maps a{
-            display: flex;
-            width: 170px;
-            padding: 5px;
-            margin: auto;
-            justify-content: center;
-            align-items: center;
+            font-size: 3vw;
             border: 3px solid white;
             border-radius: 5px;
             background: black;
             font-size: 20px;
             box-shadow:inset  1px 1px 16px 2px white,
                          1px 1px 16px 2px white;
-        }
-            
-.google-maps a:hover {
+            padding: 3px;
+            }
+        
+            .dropbox a:hover {
             color: white;
             text-shadow: 0 0 10px #70d0ee,
                         0 0 10px #70d0ee,
-                        0 0 20px #70d0ee,
+                        0 0 20px white,
                         0 0 40px white,
                         0 0 60px white,
                         0 0 100px white,
@@ -475,182 +333,134 @@
 
 
 
-
-/* Google maps */
-        .container{
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            padding-top: 56.25%;
+        .service-times{
+            margin: 20%;
         }
+        .service{
+            background: #6F809A;
+            border: 7px solid white;
+            box-shadow: 2px 2px 25px 7px #FFF;
+            border-radius: 20px;
+            margin: 2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 3%;
+            padding-bottom: 20px;
+        }
+
+
+
+
+
         .container iframe{
-            position: absolute;
             top: 0;
             left: 0;
             bottom: 0;
             right: 0;
             width: 100%;
             height: 100%;
+            margin-bottom: 3%;
+            border-radius: 10px;
         }
 
-
-
-
-
-/* Responsive design CSS */
-@media all and (max-width: 400px){
-    /* *{
-        margin: 0px;
-        /* padding: 0px; */
-    } */
-    html, body{
-        width: 100vw;
-        overflow-x: hidden;
-    }
-    
-    .about-us-text {
-        font-size: 1rem;
-    }
-    .navbar a{
-            flex-direction: column;
-            font-size: 2rem;
-    }
-    
-        .staff-pic-left{
-            display: flex;
-            flex-direction: column;
-    }
-        .staff-pic-right{
-            display: flex;
-            flex-direction: column;
-    }
-        .bio-text{
-            max-width: 80%;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            font-size: 1.5rem;
-    }
-    .service-times{
-            display: flex;
-            flex-direction: column;
-    }
-    
-        .ban-come-worship-with-us,
-        .ban-meet-our-staff,
-        .ban-come-have-fun,
-        .ban-upcoming-events{
-            margin: 30px;
-        }
-    }
 
 
     </style>
 </head>
-
-
-
-
-
 <body>
 
 
 
-    <div class="wrapper">
 
+    <!-- header element -->
 
-<!-- Header with logo and navbar -->
-        <header class="header">
-            <div class="logo">
-            <img src="IMG_20231108_190448_01.gif" width="61px">
-            </div>
-
-                <div class="navbar">
-                    <a href="#About">About</a>
-                    <a href="#Staff">Staff</a>
-                    <a href="PicFolder.html">Pictures</a>
-                    <a href="#Events">Events</a>
-                    <a href="#Services">Services</a>
-                    <a href="#Find Us">Find Us</a>
-                </div>
-        </header>
-
-
-
-<!-- welcome to FPC big words -->
-        <div class="welcome">
-            <h1> Welcome to the <br>
-                First Pentecostal Church of Knox!</h1>
-            <p class="scripture">“My house shall be called a house of prayer”
-                --Isa 56:7</p>
-
+    <header class="header">
+        <div class="logo">
+        <img src="IMG_20231108_190448_01.gif" width="61px">
         </div>
+    </header>
+
+
+<!-- hero page element -->
+
+    <div class="welcome">
+        <h1> Welcome to the <br>
+            First Pentecostal Church of Knox!</h1>
+        <p class="scripture">“My house shall be called a house of prayer”
+            --Isa 56:7</p>
+
+    </div>
+
 
 
 
 <!-- about us element -->
-    <a id="About"a></a>
-        <div class="about-us">
-            <h1>ABOUT US</h1>
-        
-            <div class="about-us-text">
-                We call ourselves Pentecostal because we have experienced the same miraculous conversion that the 120 followers (which included the mother of Jesus) experienced in the second chapter of Acts.
-                <br>
-                According to the Bible (The Acts of the Apostles), the New Testament Church began on the Day of Pentecost, which was fifty days after the resurrection of Jesus Christ. When the crowd heard the noise, saw the commotion, and listened to the message, they asked the Apostles how to be saved.
-                <br>
-                Peter, standing up with the other eleven apostles, preached this message:
-                <h1 class="Repentance">
-                    Repentance
-                </h1>
-                We must repent (turn away from) of our sins. We do this by asking Jesus to forgive us.
-                <br>
-                Luke 12:47; 2Peter 3:9, Acts 2:38
-                <h2 class="Baptism">
-                    Baptism
-                </h2>
-                We must be baptized (fully submerged in water) in the Name of Jesus Christ for the remission of our sins.
-                <br>
-                John 3:4; Acts 2:38, 8:16, 10:48, 19:5
-                <h3 class="Spirit-Infilling">
-                    Spirit Infilling
-                </h3>
-                We are promised the gift of His Spirit with the evidence of speaking in other tongues.
-                <br>
-                John 7:37-39; Acts 2:4, 2:38, 8:17-18, 9:17, 10:44-47, 19:6
-            </div>
-         </div>
+
+    <div class="about-us">
+        <h1>ABOUT US</h1>
+    
+        <div class="about-us-text">
+            We call ourselves Pentecostal because we have experienced the same miraculous conversion that the 120 followers (which included the mother of Jesus) experienced in the second chapter of Acts.
+            <br>
+            According to the Bible (The Acts of the Apostles), the New Testament Church began on the Day of Pentecost, which was fifty days after the resurrection of Jesus Christ. When the crowd heard the noise, saw the commotion, and listened to the message, they asked the Apostles how to be saved.
+            <br>
+            Peter, standing up with the other eleven apostles, preached this message:
+            <h1 class="Repentance">
+                Repentance
+            </h1>
+            We must repent (turn away from) of our sins. We do this by asking Jesus to forgive us.
+            <br>
+            Luke 12:47; 2Peter 3:9, Acts 2:38
+            <h2 class="Baptism">
+                Baptism
+            </h2>
+            We must be baptized (fully submerged in water) in the Name of Jesus Christ for the remission of our sins.
+            <br>
+            John 3:4; Acts 2:38, 8:16, 10:48, 19:5
+            <h3 class="Spirit-Infilling">
+                Spirit Infilling
+            </h3>
+            We are promised the gift of His Spirit with the evidence of speaking in other tongues.
+            <br>
+            John 7:37-39; Acts 2:4, 2:38, 8:17-18, 9:17, 10:44-47, 19:6
+        </div>
+     </div>
 
 
 
-<!-- Come worship with us banner -->
+
+     <!-- Come worship with us banner -->
     <div class="ban-come-worship-with-us">
         <p>COME WORSHIP WITH US</p>
     </div>
 
 
 
-<!-- pictures of people in worship service -->
+
+    <!-- pictures of people in worship service -->
     <div class="worship-pic">
         <h4 class="PictureElement">
             <div class="zoom-in">
                 <a href="C:\Users\Nathaniel Hollis\Desktop\Website\PicFolder.html">
                     <div class="image1">
-                        <img class="card-image2" src="C:\Users\Nathaniel Hollis\Desktop\Website\worship4.JPG" height="500px">
+                        <img class="card-image2" src="worship3.JPG" height="500px">
                     </div>
                 </a>
             </div>
             <div class="zoom-in">
                 <a href="C:\Users\Nathaniel Hollis\Desktop\Website\PicFolder.html">
                     <div class="image1">
-                        <img class="card-image2" src="C:\Users\Nathaniel Hollis\Desktop\Website\worship2.JPG" height="500px">
+                        <img class="card-image2" src="worship4.jpg" height="500px">
                     </div>
                 </a>
             </div>
             <div class="zoom-in">
                 <a href="C:\Users\Nathaniel Hollis\Desktop\Website\PicFolder.html">
                     <div class="image1">
-                        <img class="card-image2" src="C:\Users\Nathaniel Hollis\Desktop\Website\worship3.JPG" height="500x">
+                        <img class="card-image2" src="worship5.jpg" height="500x">
                     </div>
                 </a>
             </div>
@@ -659,266 +469,374 @@
 
 
 
+
 <!-- Pastor's picture and Bio -->
-    <div class="staff-pic-left">
-        <div class="staff-picture">
-                <img src="PastorNewPic.jpg">
-        </div>
+    <div class="staff-element">
         <div class="bio-text">
             <h2>
-                Pastor Jerry Patrick
+                Pastor Jerry Patrick<br>
                 <a href="tel:15748062055">1-574-806-2055</a>
             </h2>
             <div class="text">
                 It was in the year of 1992 when the work of the First Pentecostal Church here in Knox, Indiana began. The call began a few years earlier as God divinely called Jerry and Marlene Patrick to this community. it was in the month of July 1992 that Pastor Patrick and his wife Marlene (along with their three children April, Jeremiah, & Candice) obeyed that calling. They would leave their home and home church in Bourbon Indiana, with their Pastor's blessing, with a strong burden to spread the Gospel of our Lord and Savior Jesus Christ and to preach the whole Bible to this community. They continue to this day 30+ years later to passionately labor for Jesus. He is so worthy!
             </div>
+            <div class="staff-picture">
+                <img class="staff" src="PastorNewPic.jpg">
+            </div>         
         </div>
     </div>
 
 
 
-<!-- Headline banner -->
-        <div class="ban-meet-our-staff">
-            <p>MEET OUR STAFF</p>
-        </div>
+
+<!-- Meet our staff banner -->
+    <div class="ban-meet-our-staff">
+        <p>MEET OUR STAFF</p>
+    </div>
 
 
 
-<!-- staff pictures and bios -->
+
+    <!-- staff pictures and bios -->
     <!-- Nate and Dani Hollis -->
-    <a id="Staff"a>
-        <div class="staff-pic-right">
-            <div class="bio-text">
-                <h2>
-                    Brother & Sister Hollis
-                </h2>
-                <div class="text">
-                    Nathaniel & Danielle Hollis work in the sound & media ministry, and are involved with the praise team along with their daughters. They also worship through the sign team, a ministry for the deaf & hearing both.
-                </div>
+    <div class="staff-element">
+        <div class="bio-text">
+            <h2>
+                Brother & Sister Hollis
+            </h2>
+            <div class="text">
+                Nathaniel & Danielle Hollis work in the sound & media ministry, and are involved with the praise team along with their daughters. They also worship through the sign team, a ministry for the deaf & hearing both.
             </div>
             <div class="staff-picture">
-                <img src="mom&dad.jpg">
+                <img class="staff" src="mom&dad.jpg">
             </div>
         </div>
+    </div>
 
 
 
 <!-- Tom and Rhonda Boomsma -->
-        <div class="staff-pic-left">
-            <div class="staff-picture">
-                <img src="Boomsma.jpg">
-            </div>
-            <div class="bio-text">
-                <h2>
-                    Brother & Sister Boomsma
-                </h2>
-                <div class="text">
-                   Tom & Rhonda have been married over 10 years. Tom is a minister, teaches the New Beginnings new converts class, and his wife is head over the music department. Both head up the hospitality department. They operate in various other capacities of ministry as well.
-                </div>
-            </div>
-        </div>
-
-
-
-<!-- Robert and Stephanie Ehresman -->
-        <div class="staff-pic-right">
-            <div class="bio-text">
-                <h2>
-                    Brother & Sister Ehresman
-                </h2>
-                <div class="text">
-                    Robert and Stephanie are part of the praise team, teach the teen Sunday School class & are the youth leaders of FPC Knox. Their daughter, Chloe, teaches the primary Sunday School class.
-                </div>
+    <div class="staff-element">
+        <div class="bio-text">
+            <h2>
+                Brother & Sister Boomsma
+            </h2>
+            <div class="text">
+               Tom & Rhonda have been married over 10 years. Tom is a minister, teaches the New Beginnings new converts class, and his wife is head over the music department. Both head up the hospitality department. They operate in various other capacities of ministry as well.
             </div>
             <div class="staff-picture">
-                <img src="RobertStephanie.jpg">
+                <img class="staff" src="Boomsma.jpg">
             </div>
         </div>
-
-
-
-<!-- come have fun with us banner -->
-        <div class="ban-come-have-fun">
-            <p>COME HAVE FUN WITH US</p>
-        </div>
-
-
-
-<!-- pictures of "come have fun with us" -->
-    <a id="Pictures"a>
-        <div class="picture-gallery">
-            <div class="zoom-in">
-                <a href="PicFolder.html">
-                    <div class="image1">
-                        <img class="card-image2" src="C:\Users\Nathaniel Hollis\Desktop\Website\fishing1.JPG" height="500px">
-                    </div>
-                </a>
-            </div>
-            <div class="zoom-in">
-                <a href="PicFolder.html">
-                    <div class="image1">
-                        <img class="card-image2" src="C:\Users\Nathaniel Hollis\Desktop\Website\fishing2.JPG" height="500px">
-                    </div>
-                </a>
-             </div>
-            <div class="zoom-in">
-                <a href="PicFolder.html">
-                    <div class="image1">
-                        <img class="card-image2" src="C:\Users\Nathaniel Hollis\Desktop\Website\fishing3.JPG" height="500x">
-                    </div>
-                </a>
-            </div>
-        </div>
-
-
-
-<!-- Upcoming events banner -->
-    <a id="Events"a>
-        <div class="ban-upcoming-events">
-            <p>UPCOMING EVENTS</p>
-        </div>
-
-
-<!-- Events in ascending order -->
-        <div class="events">
-            <div>
-                Feb 10, 2024 Sweetheart Banquet
-                <br>
-                Mar 31, 2024 Easter Singspiration 
-                <br>
-                May 12, 2024 Mother's Day
-                <br>
-                May 19, 2024 Pentecost Sunday
-                <br>
-                June 14-16, 2024 Vacation Bible School
-                <br>
-                June 16, 2024 Father's Day
-            </div>
-        </div>
-
-
-<!-- calendar -->
-        <div class="calendar">
-            <strong>JANUARY</strong>
-                <strong>2024</strong>
-            </div>
-    
-            <table>
-                <tr>
-                    <th>Sun</th>
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
-                </tr>
-                <tr>
-                    <td id="othermonth">31</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>15</td>
-                    <td>16</td>
-                    <td>17</td>
-                    <td>18</td>
-                    <td>19</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
-                    <td>26</td>
-                    <td>27</td>
-                </tr>
-                <tr>
-                    <td>28</td>
-                    <td>29</td>
-                    <td>30</td>
-                    <td>31</td>
-                    <td id="othermonth">1</td>
-                    <td id="othermonth">2</td>
-                    <td id="othermonth">3</td>
-                </tr>
-            </table>
-        </div>
-
-
-<!-- dropbox -->
-    <a id="Services"a>
-        <div class="dropbox">
-            <div>
-                Missed a service? <br> Want to hear a message again? <br> You can find it here in our 
-                <br>
-                <a class="link" href="https://www.dropbox.com/scl/fo/as5uc4cw64jj0b99zpyou/h?rlkey=6dwkewdkwjjxv2rpghz2psxq1&dl=0"> Dropbox File</a>
-            </div>
-        </div>
-
-
-<!-- service times  -->
-        <div class="service-times">
-            <div class="service1">
-                <h2>Sunday Mornings</h2>
-                <div>Pre-Service Prayer 9am<br>
-                Service 10am</div>
-            </div>
-            <div class="service2">
-                <h2>Sunday Evenings</h2>
-                <div>Pre-Service Prayer 5pm<br>
-                Service 6pm</div>
-            </div>
-            <div class="service3">
-                <h2>Tuesday Evenings</h2>
-                <div>Pre-Service Prayer 6pm<br>
-                Bible Study 7pm</div>
-            </div>
-            <div class="service4">
-                <h2>Food Pantry</h2>
-                <div>Every 1rst and 3rd Wed.<br>
-                10am to Noon</div>
-            </div>
-        </div>
-
-
-
-<!-- google maps -->
-    <a id="Find Us"a></a>
-        <div class="google-maps">
-            <p class="dropbox">509 S Roosevelt Rd <br> Knox, IN 46534</p>
-            <a href="tel:15748062055">1-574-806-2055</a>
-            <div class="container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11991.108853484491!2d-86.64944793609767!3d41.29195292650986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8811613d554d5903%3A0x2e34eb905eae6921!2s509%20S%20Roosevelt%20Rd%2C%20Knox%2C%20IN%2046534!5e0!3m2!1sen!2sus!4v1701321808256!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-
-
-
-
-
-
-
-<!-- End of div-wrapper -->
     </div>
 
 
 
+<!-- Robert and Stephanie Ehresman -->
+    <div class="staff-element">
+        <div class="bio-text">
+            <h2>
+                Brother & Sister Ehresman
+            </h2>
+            <div class="text">
+                Robert & Stephanie are part of the praise team, teach the teen Sunday School class & are the youth leaders of FPC Knox. Their daughter, Chloe, teaches the primary Sunday School class.
+            </div>
+            <div class="staff-picture">
+                <img class="staff" src="RobertStephanie.jpg">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Lori and Terry Gardner -->
+    <div class="staff-element">
+        <div class="bio-text">
+            <h2>
+                Brother & Sister Gardner
+            </h2>
+            <div class="text">
+                Terry & Lorrie Gardner head up the Food Pantry. Sister Lorrie is faithful in filling in for many other various needs in the Church.
+            </div>
+            <div class="staff-picture">
+                <img class="staff" src="Gardners.jpg">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- come have fun with us banner -->
+    <div class="ban-come-have-fun">
+        <p>COME HAVE FUN WITH US</p>
+    </div>
+
+
+
+
+    <!-- pictures of "come have fun with us" -->
+    <div class="picture-gallery">
+        <div class="zoom-in">
+            <a href="C:\Users\Nathaniel Hollis\Desktop\Website\PicFolder.html">
+                <div class="image1">
+                    <img class="card-image2" src="fishing1.JPG" height="500px">
+                </div>
+            </a>
+        </div>
+        <div class="zoom-in">
+            <a href="C:\Users\Nathaniel Hollis\Desktop\Website\PicFolder.html">
+                <div class="image1">
+                    <img class="card-image2" src="fishing2.JPG" height="500px">
+                </div>
+            </a>
+         </div>
+        <div class="zoom-in">
+            <a href="C:\Users\Nathaniel Hollis\Desktop\Website\PicFolder.html">
+                <div class="image1">
+                    <img class="card-image2" src="fishing3.JPG" height="500x">
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Upcoming events banner -->
+    <div class="ban-upcoming-events">
+        <p>UPCOMING EVENTS</p>
+    </div>
+
+
+
+
+    <!-- Events in ascending order -->
+    <div class="events">
+        <div>
+            **dates and times are subject to change
+            <br>
+            Feb 10, 2024 Sweetheart Banquet
+            <br>
+            Mar 31, 2024 Easter Singspiration 
+            <br>
+            May 12, 2024 Mother's Day
+            <br>
+            May 19, 2024 Pentecost Sunday
+            <br>
+            June 14-16, 2024 Vacation Bible School
+            <br>
+            June 16, 2024 Father's Day
+        </div>
+    </div>
+
+
+
+
+    <div class="color-key-calender">
+        <h2>Color key for calender</h2>
+        <p id="red">holiday</p>
+        <p id="green">Revival</p>
+
+    </div>
+
+
+
+
+    <!-- calendar -->
+    <div class="calendar">
+        <strong>December</strong>
+            <strong>2023</strong>
+        </div>
+
+        <table>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+            <tr>
+                <td id="othermonth">26</td>
+                <td id="othermonth">27</td>
+                <td id="othermonth">28</td>
+                <td id="othermonth">29</td>
+                <td id="othermonth">30</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td id="holiday">24</td>
+                <td id="holiday">25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td id="holiday">31</td>
+                <td id="othermonth">1</td>
+                <td id="othermonth">2</td>
+                <td id="othermonth">3</td>
+                <td id="othermonth">4</td>
+                <td id="othermonth">5</td>
+                <td id="othermonth">6</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <div class="calendar">
+        <strong>JANUARY</strong>
+            <strong>2024</strong>
+        </div>
+
+        <table>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+            <tr>
+                <td id="othermonth">31</td>
+                <td id="holiday">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td id="holiday">15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td id="othermonth">1</td>
+                <td id="othermonth">2</td>
+                <td id="othermonth">3</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <!-- dropbox -->
+    <div class="dropbox">
+        <div>
+            Missed a service? <br> Want to hear a message again? <br> You can find it here in our 
+        </div>
+        <a class="link" href="https://www.dropbox.com/scl/fo/as5uc4cw64jj0b99zpyou/h?rlkey=6dwkewdkwjjxv2rpghz2psxq1&dl=0"> Dropbox File</a>
+    </div>
+
+
+
+
+    <!-- service times  -->
+    <div class="service-times">
+        <div class="service">
+            <h2>Sunday Mornings</h2>
+            <div>Pre-Service Prayer 9am<br>
+            Service 10am</div>
+        </div>
+        <div class="service">
+            <h2>Sunday Evenings</h2>
+            <div>Pre-Service Prayer 5pm<br>
+            Service 6pm</div>
+        </div>
+        <div class="service">
+            <h2>Tuesday Evenings</h2>
+            <div>Pre-Service Prayer 6pm<br>
+            Bible Study 7pm</div>
+        </div>
+        <div class="service">
+            <h2>Food Pantry</h2>
+            <div>Every 1st and 3rd Wed.<br>
+            10am to Noon</div>
+        </div>
+    </div>
+
+
+
+
+    <!-- google maps -->
+    <div class="google-maps">
+        <p class="dropbox">509 S Roosevelt Rd <br> Knox, IN 46534
+        <a href="tel:15748062055">1-574-806-2055</a></p>
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11991.108853484491!2d-86.64944793609767!3d41.29195292650986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8811613d554d5903%3A0x2e34eb905eae6921!2s509%20S%20Roosevelt%20Rd%2C%20Knox%2C%20IN%2046534!5e0!3m2!1sen!2sus!4v1701321808256!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+
+
+
+    
 </body>
 </html>
