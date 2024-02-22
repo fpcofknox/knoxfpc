@@ -398,6 +398,42 @@
             box-shadow: 2px 2px 25px 7px white;
             margin: 5%;
         }
+        .menu{
+            display: none;
+        }
+        .menu.open{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin-right: 0;
+            margin-left: auto;
+            text-align: right;
+            width: 25%;
+        }
+        .menu a{
+            display: flex;
+            justify-content: right;
+            padding: 10px;
+            margin-right: 0;
+            background: rgba(0, 0, 0, 0.484);
+            text-decoration: none;
+            color: white;
+        }
+        .hamburger{
+            display: flex;
+            justify-content: right;
+        }
+        .close{
+            border: 2px solid lightblue;
+            display: flex;
+            justify-content: right;
+        }
+        .menu.open .hamburger .icon-open{
+            display: flex;
+        }
+        .hamburger .icon-close {
+            display: none;
+        }
 
 
     </style>
@@ -412,6 +448,23 @@
     <header class="header">
         <div class="logo">
         <img src="IMG_20231108_190448_01.gif" width="61px">
+        </div>
+
+        <div id="hamburgerToggle" class="hamburger">
+                <div class="icon-open">
+                    <img src="burgerMenu.png" width="24px">
+                </div>
+        </div>
+
+
+        <div id="menu" class="menu">
+            <a href="#About Us">About Us</a>
+            <a href="#Staff">Staff</a>
+            <a href="#">Pictures</a>
+            <a href="#Events">Events</a>
+            <a href="https://www.dropbox.com/scl/fo/as5uc4cw64jj0b99zpyou/h?rlkey=6dwkewdkwjjxv2rpghz2psxq1&dl=0">Sermons</a>
+            <a href="#Service">Service</a>
+            <a href="#Find Us">Find Us</a>
         </div>
     </header>
 
@@ -429,7 +482,7 @@
 
 
 <!-- about us element -->
-
+<a id="About Us"></a>
     <div class="about-us">
         <h1>ABOUT US</h1>
     
@@ -574,6 +627,7 @@
 
 
 <!-- Meet our staff banner -->
+    <a id="Staff"></a>
     <div class="ban-meet-our-staff">
         <p>MEET OUR STAFF</p>
     </div>
@@ -817,9 +871,11 @@
 
 
  <!-- Events in ascending order -->
+    <a id="Events"></a>
     <div class="events">
         <div>
-            **dates and times are subject to change
+            **dates and times are subject to change
+
             <br>
             Mar 31, 2024 Easter Singspiration
             <br>
@@ -998,6 +1054,7 @@
 
 
     <!-- service times  -->
+    <a id="Service"></a>
     <div class="service-times">
         <div class="service">
             <h2>Sunday Mornings</h2>
@@ -1027,6 +1084,7 @@
 
 
     <!-- google maps -->
+    <a id="Find Us"></a>
     <div class="google-maps">
         <p class="dropbox">509 S Roosevelt Rd <br> Knox, IN 46534
         <a href="tel:15748062055">1-574-806-2055</a></p>
@@ -1038,6 +1096,21 @@
 
 
 
+
+    <script>
+    const hamburgerToggle = document.querySelector("#hamburgerToggle");
+    const menu = document.querySelector("#menu");
+
+    hamburgerToggle.addEventListener("click", onHamburgerClick);
+
+    function onHamburgerClick() {
+        if (!menu.classList.contains("open")) {
+        menu.classList.add("open");
+    } else {
+        menu.classList.remove("open");
+    }
+}
+</script>
 
     
 </body>
