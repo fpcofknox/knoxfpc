@@ -30,13 +30,15 @@
 
 
         /* <!-- header element --> */
-        .header{
-            display: flex;
+         .header{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            position: sticky;
+            top: 0;
         }
         .logo{
             padding-right: 50%;
         }
-
 
  /* Scrollbar CSS  */
  ::-webkit-scrollbar {
@@ -436,8 +438,12 @@
         .hamburger .icon-close {
             display: none;
         }
-
-
+        .menu :nth-last-child(1) {
+            border-bottom-left-radius: 12px;
+        }
+        .menu :nth-child(1) {
+            border-top-left-radius: 12px;
+        }
     </style>
 </head>
 <body>
