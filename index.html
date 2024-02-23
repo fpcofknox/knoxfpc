@@ -409,15 +409,16 @@
             display: grid;
             grid-column: 2;
             padding: 0;
-            margin-right: 10px;
+            margin-right: 50px;
             margin-left: auto;
             text-align: right;
-            width: 25%;
+            width: 50%;
+            font-size: 2rem
         }
         .menu a{
             display: flex;
             justify-content: right;
-            padding: 10px;
+            padding: 15px;
             margin-right: 0;
             background: rgba(0, 0, 0, 0.484);
             text-decoration: none;
@@ -440,9 +441,11 @@
         }
         .menu :nth-last-child(1) {
             border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
         }
         .menu :nth-child(1) {
             border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
         }
     </style>
 </head>
@@ -460,10 +463,11 @@
 
         <div id="hamburgerToggle" class="hamburger">
                 <div class="icon-open">
-                    <img src="burgerMenu.png" width="24px"
+                    <img src="burgerMenu.png" width="30px"
                         style="background: #6F809A;
                             padding: 5px;
-                            border-radius: 50%; ">
+                            border-radius: 50%;
+                            box-shadow: 0px 0px 10px 10px white;">
                 </div>
         </div>
 
