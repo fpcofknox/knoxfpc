@@ -12,1151 +12,122 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
 
-    <title>First Pentecostal Church of Knox</title>
+
+    <title>Testimonial</title>
     <style>
         *{
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
-/*             overflow-x: hidden; */
+            font-family:'Ubuntu', sans-serif;
         }
-            
         body{
-            background: linear-gradient(180deg, hsl(260, 18%, 52%, .65) 0%, #000 100%), url("2snowchurchpic.jpg");
-            background-repeat: no-repeat;
-            background-size:contain;
-            color: white;
-            text-wrap: balance;
-            font-family:'Ubuntu', sans-serif;
-            text-shadow: 4px 4px 5px #110800;
-            font-size: 3vw;
+            background: #e1ebfa;
+            color: rgb(75, 74, 74);
         }
 
 
-
-
-
-        /* <!-- header element --> */
-         .header{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            position: sticky;
-            top: 0;
-            border-bottom: 1px solid black;
-            width: 100%;
-            background: #000000ba;
-        }
-        .logo{
-            padding-right: 50%;
-        }
-
- /* Scrollbar CSS  */
- ::-webkit-scrollbar {
-            width: 1.5rem;
-         }
-         ::-webkit-scrollbar-track {
-            background: black;
-            border-left: 1px solid white;
-                }
-            ::-webkit-scrollbar-thumb {
-                background: #02060c;
-                border: 5px solid white;
-                border-radius: 5px;
-                box-shadow: 1px 1px 5px 1px white;
-            }
-            ::-webkit-scrollbar-thumb:hover {
-                box-shadow: inset 1px 20px 10px white,
-                            1px 1px 10px 10px white;
-            }
-
-        /* <!-- hero page element --> */
-        .welcome{
-            width: auto;
-            height: 100vw;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-size: 3vw;
-            font-family: 'Dancing Script', cursive;
-            color: white;
-            text-shadow: 0 0 10px #70d0ee,
-            0 0 10px #70d0ee,
-            0 0 10px #70d0ee,
-            0 0 10px #70d0ee,
-            0 0 10px #70d0ee;
-        }
-        .scripture{
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            flex-wrap: wrap;
-            font-size: clamp(16px, 4vw, 30px);
-            margin-bottom: 50px;
-            font-family:'Ubuntu', sans-serif;
-        }
-
-
-        /* <!-- about us element --> */
-        .about-us{
-            background: #6F809A;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            font-size: 3vw;
-            text-align: center;
-            text-wrap: balance;
-            
-            margin: 0px 50px 0px 50px;
-            padding: 20px;
-            border: 7px solid white;
-            border-radius: 20px;
-            box-shadow: 2px 2px 25px 7px #FFF;
-            }
-            .about-us-text {
-            justify-content: center;
-            flex-direction: column;
-            font-size: clamp(20px, 7vw, 30px);
-            text-align: center;
-            font-size: 3vw;
-            margin-bottom: 20px;
-        }
-        .Repentance{
-            font-family: 'Dancing Script', cursive;
-            font-size: 7vw;
-            color: red;
-            text-shadow: 0 0 10px orange,
-                0 0 10px orange,
-                0 0 10px orange,
-                0 0 10px orange,
-                0 0 10px orange;
-            margin: 20px;
-         }
-        .Baptism{
-            font-family: 'Dancing Script', cursive;
-            font-size: 7vw;
-            color: blue;
-            text-shadow: 0 0 10px lightblue,
-                0 0 10px lightblue,
-                0 0 10px lightblue,
-                0 0 10px lightblue,
-                0 0 10px lightblue;
-            margin: 20px;
-        }
-        .Spirit-Infilling{
-            font-family: 'Dancing Script', cursive;
-            font-size: 7vw;
-            color: green;
-            text-shadow: 0 0 10px lime,
-                0 0 10px lime,
-                0 0 10px lime,
-                0 0 10px lime,
-                0 0 10px lime;
-             margin: 20px;
-            }
-
-
-
-
-
-        .ban-come-worship-with-us,
-        .ban-meet-our-staff,
-        .ban-come-have-fun,
-        .ban-upcoming-events{
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            font-size: clamp(20px, 9vw, 61px);
-            font-family: 'Dancing Script', cursive;
-            color: white;
-            text-shadow: 0 0 10px #70d0ee,
-            0 0 10px #70d0ee,
-            0 0 10px #70d0ee,
-            0 0 10px #70d0ee,
-            0 0 10px #70d0ee;     
-        }
-
-
-
-        /* <!-- pictures of people in worship service --> */
-        .worship-pic,
-        .picture-gallery{
-            padding: 5px;
-            background: black;
-        }
-        .picture-gallery,
-        .PictureElement{
-            padding: 5px;
-            display: flex;
-            overflow: scroll;
-            gap: 10px;
-            border: 5px solid white;
-            border-radius: 5px;
-            box-shadow: 2px 2px 25px 7px #FFF;
-            margin: 3%;
-
-        }
-        .image1{
-            padding: 5px;
-            border: 5px solid white;
-            border-radius: 3px;
-        }
-
-
-
-
-
-        .staff-element{
-            padding: 5px;
-            margin: 3%;
-        }
-        .staff-picture{
-            border-radius: 20px;
-            height: 200px;
-            width: 200px;
-            padding: 20px;
-        }
-        .staff{
-            max-width: 100%;
-            max-height: 100%;
-            border-radius: 20px;
-            object-fit: cover;
-            object-position: left;
-            overflow: hidden;
-            border: 5px solid white;
-            box-shadow: 2px 2px 25px 7px #FFF;
-        }
-        .bio-text{
-            background: #6F809A;
-            border: 7px solid white;
-            border-radius: 20px;
-            box-shadow: 2px 2px 25px 7px #FFF;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .testimonials {
+            padding: 40px 0;
             text-align: center;
         }
-        .text{
-            margin: 3%;
-        }
-
-
-
-
-
-        .events{
-            margin: 3%;
-        }
-
-
-
-
-        .color-key-calender{
-            background: linear-gradient(180deg, hsla(194, 18%, 52%, 0.65) 0%, #000);
-            border-radius: 10px;
-            width: 50%;
-            display: flex;
-            flex-direction:column;
-            padding: 0;
-            margin: 3%;
-        }
-        #red{
-            background: red;
-        }
-        #green{
-            background: lime;
-        }
-        #yellow{
-            background: yellow;
-        }
-
-
-
-        /* calender container */
-        .calender {
+        .inner {
+            max-width: 1200px;
             margin: auto;
-            width: 800px;
-            font-size: clamp(20px, 3vw, 30px);
-            font-family: serif;
-            font-weight: bold;
-            color: black;
-        }
-        .month{
-            text-align: center;
-            background: black;
-            font-size: 2rem;
-            letter-spacing: 1px;
-            color: black;
-            border: 2px solid #6F809A;
-            }
-        table, th, td{
-            width: 100%;
-            table-layout: fixed;
-            text-align: center;
-            font-size: 27px;
-            border-collapse: collapse;
-            border: 5px solid #6F809A;
-            font-family:'Ubuntu';
-        }
-        #othermonth {
-            color: #6F809A;
-            font-weight: 100;
-        }
-        #holiday {
-            background: red;
-        }
-        #special {
-            background: yellow;
+            overflow: hidden;
+            padding: 0 20px;
         }
         
-
-
-
-
-        .dropbox{
+        .row {
             display: flex;
-            flex-direction: column;
-            text-align: center;
+            flex-wrap:  wrap;
             justify-content: center;
-            align-items: center;
-            margin: 10%;
         }
-        .dropbox a{
-            margin-top: 12px;
-            text-decoration: none;
-            color: white;
-            font-size: 3vw;
-            border: 3px solid white;
+        .col {
+            flex: 33.33%;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+        .testimonial {
+            background: linear-gradient(135deg,white, 50%, #c1ccdcc3);
+            box-shadow: 2px 2px 7px #727f92,
+                        -7px -7px 9px  white;
+            padding: 30px;
             border-radius: 5px;
-            background: black;
-            font-size: 20px;
-            box-shadow:inset  1px 1px 16px 2px white,
-                         1px 1px 16px 2px white;
-            padding: 3px;
-            }
-        
-            .dropbox a:hover {
-            color: white;
-            text-shadow: 0 0 10px #70d0ee,
-                        0 0 10px #70d0ee,
-                        0 0 20px white,
-                        0 0 40px white,
-                        0 0 60px white,
-                        0 0 100px white,
-                        0 0 120px white,
-                        0 0 160px white;
         }
-
-
-
-        .service-times{
-            margin: 20%;
+        .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
         }
-        .service{
-            background: #6F809A;
-            border: 7px solid white;
-            box-shadow: 2px 2px 25px 7px #FFF;
-            border-radius: 20px;
-            margin: 2px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin: 3%;
-            padding-bottom: 20px;
+        .name {
+            padding-bottom: 10px;
         }
-
-
-
-
-
-        .container iframe{
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            margin-bottom: 3%;
-            border-radius: 10px;
-        }
-/*         .warning{
-            font-family:'Ubuntu', sans-serif;
-            color: red;
-            text-shadow: 0 0 10px orange,
-            0 0 10px orange,
-            0 0 10px orange,
-            0 0 10px orange,
-            0 0 10px orange;
-        } */
-
-        .bible-reading{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            border: 7px solid white;
-            border-radius: 11px;
-            box-shadow: 2px 2px 25px 7px white;
-            margin: 2%;
-            padding: 2%;
-            background: #6F809A;
-        }
-        .bible-reading img{
-            border: 3px solid white;
-            border-radius: 11px;
-            box-shadow: 2px 2px 25px 7px white;
-            margin: 5%;
-        }
-
-
-
-/* <!-- drop-down menu --> */
-        .menu{
-            display: none;
-        }
-        .menu.open{
-            display: grid;
-            grid-column: 2;
-            padding: 0;
-            margin-right: 50px;
-            margin-left: auto;
-            text-align: right;
-            width: 50%;
-            font-size: 1.5rem
-        }
-        .menu a{
-            display: flex;
-            justify-content: right;
+        Button {
+            color: rgb(75, 74, 74);
+            background: linear-gradient(180deg,white, 30%, #c1ccdcc3);
+            font-size: 15px;
+            border-radius: 50px;
+            box-shadow: 2px 2px 7px #727f92,
+                        -7px -7px 9px  white;
             padding: 10px;
-            margin-right: 0;
-            background: rgba(0, 0, 0, 0.484);
-            text-decoration: none;
-            color: white;
+            margin: 20px;
         }
-        .hamburger{
-            display: flex;
-            justify-content: right;
-        }
-        .close{
-            border: 2px solid lightblue;
-            display: flex;
-            justify-content: right;
-        }
-        .menu.open .hamburger .icon-open{
-            display: flex;
-        }
-        .hamburger .icon-close {
-            display: none;
-        }
-        .menu :nth-last-child(1) {
-            border-bottom-left-radius: 12px;
-            border-bottom-right-radius: 12px;
-        }
-        .menu :nth-child(1) {
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
+        
+        Button:hover {
+            box-shadow: inset 2px 2px 7px #8593a8c3,
+                        -2px -2px 7px white;
+            background: rgba(255, 255, 255, 0.568);
         }
     </style>
 </head>
 <body>
+    <div class="testimonials">
+    <div class="inner">
+        <h1>Testimonials</h1>
+        <div class="border">
 
+            <div class="row">
+                <div class="col">
+                    <div class="testimonial">
+                        <h2 class="name">Full Name</h2>
 
-
-
-    <!-- header element -->
-
-    <header class="header">
-        <div class="logo">
-        <img src="IMG_20231108_190448_01.gif" width="40px">
-        </div>
-
-        <div id="hamburgerToggle" class="hamburger">
-                <div class="icon-open">
-                    <img src="burgerMenu.png" width="30px"
-                        style="background: black;
-                            padding: 5px;
-                            border-radius: 50%;
-                            box-shadow: 0px 0px 10px 10px white;">
-                </div>
-        </div>
-
-
-        <div id="menu" class="menu">
-            <a href="#About Us">About Us</a>
-            <a href="#Staff">Staff</a>
-<!--             <a href="#">Pictures</a> -->
-            <a href="#Events">Events</a>
-            <a href="https://www.dropbox.com/scl/fo/as5uc4cw64jj0b99zpyou/h?rlkey=6dwkewdkwjjxv2rpghz2psxq1&dl=0">Sermons</a>
-            <a href="#Service">Service</a>
-            <a href="#Find Us">Find Us</a>
-        </div>
-    </header>
-
-
-<!-- hero page element -->
-
-    <div class="welcome">
-        <h1> Welcome to the <br>
-            First Pentecostal Church of Knox!</h1>
-        <p class="scripture">“My house shall be called a house of prayer”
-            --Isa 56:7</p>
-    </div>
-
-
-
-
-<!-- about us element -->
-<a id="About Us"></a>
-    <div class="about-us">
-        <h1>ABOUT US</h1>
-    
-        <div class="about-us-text">
-            We call ourselves Pentecostal because we have experienced the same miraculous conversion that the 120 followers (which included the mother of Jesus) experienced in the second chapter of Acts.
-            <br>
-            According to the Bible (The Acts of the Apostles), the New Testament Church began on the Day of Pentecost, which was fifty days after the resurrection of Jesus Christ. When the crowd heard the noise, saw the commotion, and listened to the message, they asked the Apostles how to be saved.
-            <br>
-            Peter, standing up with the other eleven apostles, preached this message:
-            <h1 class="Repentance">
-                Repentance
-            </h1>
-            We must repent (turn away from) of our sins. We do this by asking Jesus to forgive us.
-            <br>
-            Luke 12:47; 2Peter 3:9, Acts 2:38
-            <h2 class="Baptism">
-                Baptism
-            </h2>
-            We must be baptized (fully submerged in water) in the Name of Jesus Christ for the remission of our sins.
-            <br>
-            John 3:4; Acts 2:38, 8:16, 10:48, 19:5
-            <h3 class="Spirit-Infilling">
-                Spirit Infilling
-            </h3>
-            We are promised the gift of His Spirit with the evidence of speaking in other tongues.
-            <br>
-            John 7:37-39; Acts 2:4, 2:38, 8:17-18, 9:17, 10:44-47, 19:6
-        </div>
-     </div>
-
-
-
-
-     <!-- Come worship with us banner -->
-    <div class="ban-come-worship-with-us">
-        <p>COME WORSHIP WITH US</p>
-    </div>
-
-
-
-
-    <!-- pictures of people in worship service -->
-    <div class="worship-pic">
-        <h4 class="PictureElement">
-            <div class="zoom-in">
-                <a target="_blank" 
-                    href="worship4.jpg">
-                    <div class="image1">
-                        <img class="card-image2"
-                         src="worship4.jpg"
-                         height="300px">
+                        <p>"Facere ratione dignissimos in fugit officiis velit unde nemo similique, voluptates, vero cum optio sapiente praesentium? Ipsam tempore dolorum fugit aliquid perspiciatis!"</p>
                     </div>
-                </a>
-            </div>
+                </div>
 
-            
-            <div class="zoom-in">
-                 <a target="_blank" 
-                    href="worship3.jpg">
-                    <div class="image1">
-                        <img class="card-image2" src="worship3.jpg" height="300px">
+                <div class="col">
+                    <div class="testimonial">
+                        <h2 class="name">Full Name</h2>
+                       
+                        <p>"Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            ..."</p>
                     </div>
-                </a>
-            </div>
+                </div>
 
-            
-            <div class="zoom-in">
-                 <a target="_blank" 
-                    href="worship5.jpg">
-                    <div class="image1">
-                        <img class="card-image2" src="worship5.jpg" height="300x">
+                <div class="col">
+                    <div class="testimonial">
+                        <h2 class="name">Full Name</h2>
+                        
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis nunc eget lorem dolor sed. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Congue quisque egestas diam in arcu cursus euismod quis. Pretium quam vulputate dignissim suspendisse in est. Arcu ac tortor dignissim convallis aenean et tortor. Sed augue lacus viverra vitae."</p>
                     </div>
-                </a>
-            </div>
-            <div class="zoom-in">
-                 <a target="_blank" 
-                    href="worship1.jpg">
-                    <div class="image1">
-                        <img class="card-image2" src="worship1.jpg" height="300px">
-                    </div>
-                </a>
-            </div>
-            <div class="zoom-in">
-                 <a target="_blank" 
-                    href="worship2.jpg">
-                    <div class="image1">
-                        <img class="card-image2" src="worship2.jpg" height="300px">
-                    </div>
-                </a>
-            </div>
-
-            
-            <div class="zoom-in">
-                 <a target="_blank" 
-                    href="bishop.jpg">
-                    <div class="image1">
-                        <img class="card-image2" src="bishop.jpg" height="300x">
-                    </div>
-                </a>
-            </div>
-             <div class="zoom-in">
-                <a target="_blank" 
-                    href="worship6.jpg">
-                    <div class="image1">
-                        <img class="card-image2" src="worship6.jpg" height="300px">
-                    </div>
-                </a>
-            </div>
-
-            
-            <div class="zoom-in">
-                <a target="_blank" 
-                    href="worship7.jpg">
-                    <div class="image1">
-                        <img class="card-image2" src="worship7.jpg" height="300x">
-                    </div>
-                </a>
-            </div>
-        </h4>
-    </div>
-
-
-
-
-<!-- Pastor's picture and Bio -->
-    <div class="staff-element">
-        <div class="bio-text">
-            <h2>
-                Pastor Jerry Patrick<br>
-                <a href="tel:15748062055">1-574-806-2055</a>
-            </h2>
-            <div class="text">
-                It was in the year of 1992 when the work of the First Pentecostal Church here in Knox, Indiana began. The call began a few years earlier as God divinely called Jerry and Marlene Patrick to this community. it was in the month of July 1992 that Pastor Patrick and his wife Marlene (along with their three children April, Jeremiah, & Candice) obeyed that calling. They would leave their home and home church in Bourbon Indiana, with their Pastor's blessing, with a strong burden to spread the Gospel of our Lord and Savior Jesus Christ and to preach the whole Bible to this community. They continue to this day 30+ years later to passionately labor for Jesus. He is so worthy!
-            </div>
-            <div class="staff-picture">
-                <a target="_blank" 
-                    href="PastorNewPic.jpg">
-                <img class="staff" src="PastorNewPic.jpg">
-            </div>         
-        </div>
-    </div>
-
-
-
-
-<!-- Meet our staff banner -->
-    <a id="Staff"></a>
-    <div class="ban-meet-our-staff">
-        <p>MEET OUR STAFF</p>
-    </div>
-
-
-
-
-    <!-- staff pictures and bios -->
-    <!-- Nate and Dani Hollis -->
-    <div class="staff-element">
-        <div class="bio-text">
-            <h2>
-                Brother & Sister Hollis
-            </h2>
-            <div class="text">
-                Nathaniel & Danielle Hollis work in the sound & technology/media ministry, and are involved with the praise team along with their daughters. They also worship through the sign team, a ministry for the deaf & hearing both.
-            </div>
-            <div class="staff-picture">
-                <a target="_blank" 
-                    href="mom&dad.jpg">
-                <img class="staff" src="mom&dad.jpg">
-            </a>
-            </div>
-        </div>
-    </div>
-
-
-
-<!-- Tom and Rhonda Boomsma -->
-    <div class="staff-element">
-        <div class="bio-text">
-            <h2>
-                Brother & Sister Boomsma
-            </h2>
-            <div class="text">
-               Tom & Rhonda have been married over 10 years. Tom is a minister, teaches the New Beginnings new converts class, and his wife is head over the music department. Both head up the hospitality department. They operate in various other capacities of ministry as well.
-            </div>
-            <div class="staff-picture">
-                <a target="_blank" 
-                    href="Boomsma.jpg">
-                <img class="staff" src="Boomsma.jpg">
-            </a>
-            </div>
-        </div>
-    </div>
-
-
-
-<!-- Robert and Stephanie Ehresman -->
-    <div class="staff-element">
-        <div class="bio-text">
-            <h2>
-                Brother & Sister Ehresman
-            </h2>
-            <div class="text">
-                Robert & Stephanie are part of the praise team, teach the teen Sunday School class & are the youth leaders of FPC Knox. Their daughter, Chloe, teaches the primary Sunday School class.
-            </div>
-            <div class="staff-picture">
-                <a target="_blank" 
-                    href="RobertStephanie.jpg">
-                <img class="staff" src="RobertStephanie.jpg">
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- Lori and Terry Gardner -->
-    <div class="staff-element">
-        <div class="bio-text">
-            <h2>
-                Brother & Sister Gardner
-            </h2>
-            <div class="text">
-                Terry & Lorrie Gardner head up the Food Pantry. Sister Lorrie is faithful in filling in for many other various needs in the Church.
-            </div>
-            <div class="staff-picture">
-                <a target="_blank" 
-                    href="20240213_204610.jpg">
-                <img class="staff" src="20240213_204610.jpg">
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- come have fun with us banner -->
-    <div class="ban-come-have-fun">
-        <p>COME HAVE FUN WITH US</p>
-    </div>
-
-
-
-
-    <!-- pictures of "come have fun with us" -->
-    <div class="picture-gallery">
-        <div class="zoom-in">
-             <a target="_blank" 
-                    href="fishing3.jpg">
-                <div class="image1">
-                    <img class="card-image2" src="fishing3.jpg" height="300px">
                 </div>
-            </a>
+            </div>
+
+            <div class="col">
+                <div class="testimonial">
+                    <h2 class="name">Full Name</h2>
+                    
+                    <p>"Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Amet nulla facilisi morbi tempus."</p>
+                </div>
+            </div>
         </div>
 
-        
-        <div class="zoom-in">
-            <a target="_blank" 
-                    href="fishing2.jpg">
-                <div class="image1">
-                    <img class="card-image2" src="fishing2.jpg" height="300px">
-                </div>
-            </a>
-         </div>
 
-        
-        <div class="zoom-in">
-            <a target="_blank" 
-                    href="fishing1.jpg">
-                <div class="image1">
-                    <img class="card-image2" src="fishing1.jpg" height="300x">
-                </div>
+            <a href="neomorphism.html">
+                <button> Home </button>
             </a>
         </div>
     </div>
-
-
-
-<!-- picture gallery for 4th of July -->
-    <div class="picture-gallery">
-        <div class="zoom-in">
-            <a target="_blank" 
-                    href="20230704_200623.jpg">
-                <div class="image1">
-                    <img class="card-image2" src="20230704_200623.jpg" height="300px">
-                </div>
-            </a>
-        </div>
-
-        
-        <div class="zoom-in">
-            <a target="_blank" 
-                    href="20230704_200635.jpg">
-                <div class="image1">
-                    <img class="card-image2" src="20230704_200635.jpg" height="300px">
-                </div>
-            </a>
-         </div>
-
-        
-        <div class="zoom-in">
-            <a target="_blank" 
-                    href="20230704_200646.jpg">
-                <div class="image1">
-                    <img class="card-image2" src="20230704_200646.jpg" height="300x">
-                </div>
-            </a>
-        </div>
-
-        
-        <div class="zoom-in">
-            <a target="_blank" 
-                    href="20230704_200657.jpg">
-                <div class="image1">
-                    <img class="card-image2" src="20230704_200657.jpg" height="300px">
-                </div>
-            </a>
-        </div>
-
-        
-        <div class="zoom-in">
-            <a target="_blank" 
-                    href="20230704_200708.jpg">
-                <div class="image1">
-                    <img class="card-image2" src="20230704_200708.jpg" height="300px">
-                </div>
-            </a>
-         </div>
-
-        
-        <div class="zoom-in">
-            <a target="_blank" 
-                    href="20230704_200726.jpg">
-                <div class="image1">
-                    <img class="card-image2" src="20230704_200726.jpg" height="300x">
-                </div>
-            </a>
-        </div>
-
-        <div class="zoom-in">
-            <a target="_blank" 
-                    href="20230704_200811.jpg">
-                <div class="image1">
-                    <img class="card-image2" src="20230704_200811.jpg" height="300px">
-                </div>
-            </a>
-        </div>
-
-        
-        <div class="zoom-in">
-            <a target="_blank" 
-                    href="20230704_200920.jpg">
-                <div class="image1">
-                    <img class="card-image2" src="20230704_200920.jpg" height="300px">
-                </div>
-            </a>
-         </div>
-
-        
-        <div class="zoom-in">
-            <a target="_blank" 
-                    href="20230704_200953.jpg">
-                <div class="image1">
-                    <img class="card-image2" src="20230704_200953.jpg" height="300x">
-                </div>
-            </a>
-        </div>
-
-        
-    </div>
-
-
-    <div class="bible-reading">
-        "In the beginning was the Word, and the Word was with God and the Word was God."(John 1:1)
-        <br>
-        "O how love I thy law! it is my meditation all the day. Thou through thy commandments hast made me wiser than mine enemies: for they are ever with me. I have more understanding than all my teachers: for thy testimonies are my meditation. I understand more than the ancients, because I keep thy precepts. I have refrained my feet from every evil way, that I might keep thy word. I have not departed from thy judgments: for thou hast taught me. How sweet are thy words unto my taste! yea, sweeter than honey to my mouth! through thy precepts I get understanding: therefore I hate every false way. Thy word is a lamp unto my feet, and a light unto my path...Thy word have I hid in mine heart, that I might not sin against thee."(Psalm 119:97-105, 11)
-        <br>
-        Here at the First Pentecostal Church of Knox, we believe the Bible is:
-        <br>•Jesus
-        <br>•His love letters to us
-        <br>•How we get to know our God
-        <br>•Our road map to Heaven
-        <br>•"Basic Instructions Before Leaving Earth"
-        <br>•The Words of life
-        <br>...And we encourage everyone to spend time in God's Word every day of the year. Congratulations to everyone who read the Bible all the way through in 2023!
-        <img src="2023 Bible Reading.jpg"width="100%"  height="auto" alt="">
-        Join us in the year of 2024! 
-        <br> We believe you can do it! Even if you struggle to read, today's technology has made it easier than ever to listen to the Bible. Invest some of your time in reading or listening to the Bible. It will be worth it!
-    </div>
-
-
-
-    <!-- Upcoming events banner -->
-    <div class="ban-upcoming-events">
-        <p>UPCOMING EVENTS</p>
-    </div>
-
-
-
-
- <!-- Events in ascending order -->
-    <a id="Events"></a>
-    <div class="events">
-        <div>
-            **dates and times are subject to change
-
-            <br>
-            Mar 31, 2024 Easter Singspiration
-            <br>
-            May 12, 2024 Mother's Day
-            <br>
-            May 19, 2024 Pentecost Sunday
-            <br>
-            June 14-16, 2024 Vacation Bible School
-            <br>
-            June 16, 2024 Father's Day
-        </div>
-    </div>
-
-
-
-
-    <div class="color-key-calender">
-        <h2>Color key for calender</h2>
-        <p id="red" style="color: black;">holiday</p>
-        <p id="green" style="color: black">Revival</p>
-        <p id="yellow" style="color: black">Special service</p>
-    </div>
-
-
-
-
-    <!-- calendar -->
- 
-
-<div class="calendar">
-        <strong>MARCH</strong>
-            <strong>2024</strong>
-        </div>
-
-        <table>
-            <tr>
-                <th>S</th>
-                <th>M</th>
-                <th>T</th>
-                <th>W</th>
-                <th>T</th>
-                <th>F</th>
-                <th>S</th>
-            </tr>
-            <tr>
-                <td id="othermonth">25</td>
-                <td id="othermonth">26</td>
-                <td id="othermonth">27</td>
-                <td id="othermonth">28</td>
-                <td id="othermonth">29</td>
-                <td>1</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
-            </tr>
-            <tr>
-                <td>17</td>
-                <td>18</td>
-                <td>19</td>
-                <td>20</td>
-                <td>21</td>
-                <td>22</td>
-                <td>23</td>
-            </tr>
-            <tr>
-                <td>24</td>
-                <td>25</td>
-                <td>26</td>
-                <td>27</td>
-                <td>28</td>
-                <td>29</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td id="holiday">31</td>
-                <td id="othermonth">1</td>
-                <td id="othermonth">2</td>
-                <td id="othermonth">3</td>
-                <td id="othermonth">4</td>
-                <td id="othermonth">5</td>
-                <td id="othermonth">6</td>
-            </tr>
-        </table>
-    </div>
-
-    
-    <div class="calendar">
-        <strong>APRIL</strong>
-            <strong>2024</strong>
-        </div>
-
-        <table>
-            <tr>
-                <th>S</th>
-                <th>M</th>
-                <th>T</th>
-                <th>W</th>
-                <th>T</th>
-                <th>F</th>
-                <th>S</th>
-            </tr>
-            <tr>
-                <td id="othermonth">31</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-                <td>13</td>
-            </tr>
-            <tr>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
-                <td>17</td>
-                <td>18</td>
-                <td>19</td>
-                <td>20</td>
-            </tr>
-            <tr>
-                <td>21</td>
-                <td>22</td>
-                <td>23</td>
-                <td>24</td>
-                <td>25</td>
-                <td>26</td>
-                <td>27</td>
-            </tr>
-            <tr>
-                <td>28</td>
-                <td>29</td>
-                <td>30</td>
-                <td id="othermonth">1</td>
-                <td id="othermonth">2</td>
-                <td id="othermonth">3</td>
-                <td id="othermonth">4</td>
-            </tr>
-        </table>
-    </div>
-
-
-
-
-    <!-- dropbox -->
-    <div class="dropbox">
-        <div>
-            Missed a service? <br> Want to hear a message again? <br> You can find it here in our 
-        </div>
-        <a class="link" href="https://www.dropbox.com/scl/fo/as5uc4cw64jj0b99zpyou/h?rlkey=6dwkewdkwjjxv2rpghz2psxq1&dl=0"> Dropbox File</a>
-    </div>
-
-
-
-
-    <!-- service times  -->
-    <a id="Service"></a>
-    <div class="service-times">
-        <div class="service">
-            <h2>Sunday Mornings</h2>
-            <div>Pre-Service Prayer 9am<br>
-            Service 10am</div>
-        </div>
-        <div class="service">
-            <h2>Sunday Evenings</h2>
-            <div>Pre-Service Prayer 5pm<br>
-            Service 6pm<br>
-            Food and Fellowship After Service
-        </div>
-        </div>
-        <div class="service">
-            <h2>Tuesday Evenings</h2>
-            <div>Pre-Service Prayer 6pm<br>
-            Bible Study 7pm</div>
-        </div>
-        <div class="service">
-            <h2>Food Pantry</h2>
-            <div>Every 1st and 3rd Wed.<br>
-            10am to Noon</div>
-        </div>
-    </div>
-
-
-
-
-    <!-- google maps -->
-    <a id="Find Us"></a>
-    <div class="google-maps">
-        <p class="dropbox">509 S Roosevelt Rd <br> Knox, IN 46534
-        <a href="tel:15748062055">1-574-806-2055</a></p>
-        <div class="container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11991.108853484491!2d-86.64944793609767!3d41.29195292650986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8811613d554d5903%3A0x2e34eb905eae6921!2s509%20S%20Roosevelt%20Rd%2C%20Knox%2C%20IN%2046534!5e0!3m2!1sen!2sus!4v1701321808256!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-
-
-
-
-
-    <script>
-    const hamburgerToggle = document.querySelector("#hamburgerToggle");
-    const menu = document.querySelector("#menu");
-
-    hamburgerToggle.addEventListener("click", onHamburgerClick);
-
-    function onHamburgerClick() {
-        if (!menu.classList.contains("open")) {
-        menu.classList.add("open");
-    } else {
-        menu.classList.remove("open");
-    }
-}
-</script>
-
-    
+</div>
 </body>
 </html>
