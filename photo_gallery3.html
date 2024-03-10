@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <title>Photo gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: linear-gradient(135deg,white, 30%, #c1ccdcc3);
+            color: rgb(75, 74, 74);
+            background-repeat: no-repeat;
+            background-size:contain;
+            font-family:'Ubuntu', sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 40px, 20px, 0px, 20px;
+        }
+        .container .text {
+            width: 50%;
+            padding-bottom: 50px;
+        }
+        .container h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            border-bottom: 3px solid black;
+        }
+        .container h3 span {
+            font-weight: 200;
+        }
+        .container .box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: top;
+            margin: 10px;
+        }
+        .container .box .dream {
+            display: flex;
+            flex-direction: column;
+            width: 32.5%;
+        }
+        .container .box .dream img {
+            width: 100%;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        Button {
+            color: rgb(75, 74, 74);
+            background: linear-gradient(180deg,white, 30%, #c1ccdcc3);
+            font-size: 15px;
+            border-radius: 50px;
+            box-shadow: 2px 2px 7px #727f92,
+                        -7px -7px 9px  white;
+            padding: 10px;
+            margin: 20px;
+        }
+        button:hover {
+            cursor: pointer;
+            box-shadow: inset 2px 2px 7px #8593a8c3,
+                        -2px -2px 7px white;
+            background: rgba(255, 255, 255, 0.568);
+        }
+        .link {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h3>Photo <span>Gallery</span></h3>
+        </div>
+
+        <div class="link">
+            <a href="neomorphism.html">
+                <button class="btn">Home</button>
+            </a>
+            <a href="photo_gallery.html">
+                <button class="btn">More</button>
+            </a>
+        </div>
+        
+        <div class="box">
+            <div class="dream">
+                <a target="_blank" href="fishing1.jpg">
+                    <img src="fishing1.jpg" alt=""></a>
+                <a target="_blank" href="fishing20.jpg">
+                    <img src="fishing20.jpg" alt=""></a>
+                <a target="_blank" href="20230616_205028.jpg">
+                    <img src="20230616_205028.jpg" alt=""></a>
+                <a target="_blank" href="20230616_210004.jpg">
+                    <img src="20230616_210004.jpg" alt=""></a>
+            </div>
+
+            <div class="dream">
+                <a target="_blank" href="fishing2.jpg">
+                    <img src="fishing2.jpg" alt=""></a>
+                <a target="_blank" href="20230616_212036.jpg">
+                    <img src="20230616_212036.jpg" alt=""></a>
+            </div>
+
+            <div class="dream">
+                <a target="_blank" href="fishing3.jpg">
+                    <img src="fishing3.jpg" alt=""></a>
+                <a target="_blank" href="fishing5.jpg">
+                    <img src="fishing5.jpg" alt=""></a>
+                <a target="_blank" href="20230616_212134.jpg">
+                    <img src="20230616_212134.jpg" alt=""></a>
+                </div>
+        </div>
+    </div>
+    <div class="link">
+        <a href="neomorphism.html">
+            <button class="btn">Home</button>
+        </a>
+        <a href="photo_gallery.html">
+            <button class="btn">More</button>
+        </a>
+    </div>
+</body>
+</html>
