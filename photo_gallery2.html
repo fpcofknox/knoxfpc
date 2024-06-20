@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
     
-    <title>Photo gallery</title>
+    <title>PeppermintParade Gallery</title>
     <style>
         * {
             box-sizing: border-box;
@@ -73,6 +73,29 @@
             padding: 10px;
             margin: 20px;
         }
+        .btn-pulse {
+            position: relative;
+            overflow: hidden;
+        }
+  
+        .btn-pulse::before {
+            content: "";
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            left: -255px;
+            bottom: -255px;
+            background: white;
+            border-radius: 100%;
+            animation: pulse 4s linear infinite;
+        }
+
+        @keyframes pulse{
+            100% {
+                opacity: 0%;
+                transform: scale(2.5);
+            }
+        }
         button:hover {
             cursor: pointer;
             box-shadow: inset 2px 2px 7px #8593a8c3,
@@ -88,15 +111,15 @@
 <body>
     <div class="container">
         <div class="text">
-            <h3>Photo <span>Gallery</span></h3>
+            <h3>Peppermint Parade <span>Gallery</span></h3>
         </div>
 
         <div class="link">
-            <a href="index.html">
-                <button class="btn">Home</button>
+            <a href="neomorphism.html">
+                <button class="btn btn-pulse">Home</button>
             </a>
             <a href="photo_gallery.html">
-                <button class="btn">More</button>
+                <button class="btn btn-pulse">More</button>
             </a>
         </div>
         
@@ -144,11 +167,11 @@
         </div>
     </div>
     <div class="link">
-        <a href="index.html">
-            <button class="btn">Home</button>
+        <a href="neomorphism.html">
+            <button class="btn btn-pulse">Home</button>
         </a>
         <a href="photo_gallery.html">
-            <button class="btn">More</button>
+            <button class="btn btn-pulse">More</button>
         </a>
     </div>
 </body>
