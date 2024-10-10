@@ -210,8 +210,8 @@
         }
         .staff-picture{
             border-radius: 20px;
-            height: 200px;
-            width: 200px;
+            height: auto;
+            width: auto;
             padding: 10px;
         }
         .staff{
@@ -232,7 +232,7 @@
             box-shadow: inset 2px 2px 7px #8593a8c3,
                         -2px -2px 7px white;
             background: rgba(255, 255, 255, 0.568);
-            margin: 10px;
+            margin: 10px ;
 
         }
         .bio-text{
