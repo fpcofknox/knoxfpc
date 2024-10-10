@@ -222,11 +222,11 @@
             object-position: left;
             overflow: hidden;
         }
-        .picture-border-pastor
-.picture-border-hollis
-.picture-border-boomsma
-.picture-border-ehresman
-.picture-border-gardner
+        .picture-border-pastor,
+.picture-border-hollis,
+.picture-border-boomsma,
+.picture-border-ehresman,
+.picture-border-gardner,
 .picture-border-bible {
             border-radius: 7px;
             box-shadow: inset 2px 2px 7px #8593a8c3,
