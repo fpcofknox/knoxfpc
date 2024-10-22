@@ -97,7 +97,7 @@ body{
 
 /* <!-- about us element --> */
 .about-us{
-    background: linear-gradient(135deg,#b7d4fcd3 40%, #8593a8);
+    background: linear-gradient(135deg,#b7d4fcd3 5%, #8593a8);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -262,7 +262,7 @@ body{
     align-items: center;
     text-align: center;
     padding: 15px;
-    background: linear-gradient(135deg,#b7d4fcd3 40%, #8593a8);
+    background: linear-gradient(135deg,#b7d4fcd3 5%, #8593a8);
 }
 .text{
     margin: 3%;
@@ -406,7 +406,7 @@ th {
     margin: 20%;
 }
 .service{
-    background: linear-gradient(135deg,#b7d4fcd3 40%, #8593a8);
+    background: linear-gradient(135deg,#b7d4fcd3 5%, #8593a8);
     border-radius: 10px;
     box-shadow: 2px 2px 7px #727f92,
                 -7px -7px 9px  white;
@@ -454,7 +454,7 @@ th {
                 -7px -7px 9px  white;
     margin: 2%;
     padding: 20px;
-    background: linear-gradient(135deg,#b7d4fcd3 40%, #8593a8);
+    background: linear-gradient(135deg,#b7d4fcd3 5%, #8593a8);
 }
 .bible-reading img{
     border-radius: 7px;
@@ -526,7 +526,13 @@ Button:hover {
 }
 
 
+
+
+
+
 /* <!-- drop-down menu --> */
+
+
 .menu{
     display: none;
 }
