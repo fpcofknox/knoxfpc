@@ -400,7 +400,7 @@ th {
     background: rgba(255, 255, 255, 0.568);
 }
 
-
+/* service tabs */
 
 .service-times{
     margin: 20%;
@@ -419,9 +419,33 @@ th {
     padding: 20px;
 }
 
+.service-spanish {
+    background: linear-gradient(135deg,#b7d4fcd3 40%, #8593a8);
+    border-radius: 10px;
+    box-shadow: 7px 7px 9px red,
+                -7px -7px 9px  green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 20px;
+}
 
-
-
+.service-BFree{
+    background: linear-gradient(135deg,#b7d4fcd3 40%, #8593a8);
+    border-radius: 10px;
+    box-shadow: 7px 7px 9px orangered,
+                -7px -7px 9px  orangered;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px ;
+    padding: 20px;
+}
 
 .container iframe{
     top: 0;
