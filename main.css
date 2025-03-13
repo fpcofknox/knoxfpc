@@ -69,7 +69,7 @@ body{
 }
 
 .welcome h1{
-    animation: appear .5s linear;
+    animation: appear 2s linear;
 }
 @keyframes appear {
     from {
