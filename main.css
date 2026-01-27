@@ -603,14 +603,20 @@ Button:hover {
     border-top-right-radius: 12px;
 }
 
+
+
+
 /*CSS for JS: elements sliding into screen*/
 
 /* This is the starting position: invisible and 100px to the right*/
 
+
+
+
 .hidden-right {
     opacity: 0;
     transform: translateX(100px);
-    transition: all 1.0s ease-out;
+    transition: all 1.5s ease-out;
 
     /*this makes the movement smooth*/
 
@@ -623,7 +629,11 @@ Button:hover {
     transform: translateX(0);
 }
 
+
+
 /* This is the starting position: invisible and -100px to the left*/
+
+
 
 .hidden-left {
     opacity: 0;
@@ -631,13 +641,17 @@ Button:hover {
 
 /*minus sign makes it move from the left*/
 
-    transition: all 1.0s ease-out;
+    transition: all 1.5s ease-out;
 
     /*this makes the movement smooth*/
 
 }
 
-/* this is the 'Active' state that JS will trigger */
+
+
+/* next ".show" is the 'Active' state that JS will trigger */
+
+
 
 .show {
     opacity: 1;
