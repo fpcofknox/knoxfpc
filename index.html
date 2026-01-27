@@ -114,7 +114,8 @@
 
 
 <!-- Pastor's picture and Bio -->
-    <div class="staff-element hidden-right">
+    <div class="staff-element hidden-right"
+style="transition-delay: 400ms;">
         <div class="bio-text">
             <h2>
                 Pastor Jerry Patrick<br>
@@ -147,7 +148,8 @@
 
     <!-- staff pictures and bios -->
     <!-- Nate and Dani Hollis -->
-    <div class="staff-element hidden-left">
+    <div class="staff-element hidden-left"
+style="transition-delay: 1000ms;">
         <div class="bio-text">
             <h2>
                 Brother & Sister Hollis
@@ -169,7 +171,8 @@
 
 
 <!-- Tom and Rhonda Boomsma -->
-    <div class="staff-element hidden-right">
+    <div class="staff-element hidden-right"
+style="transition-delay: 1500ms;">
         <div class="bio-text">
             <h2>
                 Brother & Sister Boomsma
@@ -668,11 +671,11 @@ IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: .4,
+    threshold: .5,
 
-    // The element must be 40% (.4) visible before it triggers
+    // The element must be 50% (.5) visible before it triggers
 
-    rootMargin: '-10% 0px -50px 0px'
+    rootMargin: '0px 0px -50px 0px'
 
     //subtracts 50px from the bottom "trigger line"
 
