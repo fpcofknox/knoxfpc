@@ -602,3 +602,45 @@ Button:hover {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
+
+/*CSS for JS: elements sliding into screen*/
+
+/* This is the starting position: invisible and 100px to the right*/
+
+.hidden-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1.0s ease-out;
+
+    /*this makes the movement smooth*/
+
+}
+
+/* this is the 'Active' state that JS will trigger */
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* This is the starting position: invisible and -100px to the left*/
+
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-100px);
+
+/*minus sign makes it move from the left*/
+
+    transition: all 1.0s ease-out;
+
+    /*this makes the movement smooth*/
+
+}
+
+/* this is the 'Active' state that JS will trigger */
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
