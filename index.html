@@ -114,7 +114,7 @@
 
 
 <!-- Pastor's picture and Bio -->
-    <div class="staff-element">
+    <div class="staff-element hidden-right">
         <div class="bio-text">
             <h2>
                 Pastor Jerry Patrick<br>
@@ -147,13 +147,13 @@
 
     <!-- staff pictures and bios -->
     <!-- Nate and Dani Hollis -->
-    <div class="staff-element">
+    <div class="staff-element hidden-left">
         <div class="bio-text">
             <h2>
                 Brother & Sister Hollis
             </h2>
             <div class="text">
-                Nathaniel & Danielle Hollis work as leaders for sound ministry as well as IT (Information & Technology) for FPC. They are involved with the praise team along with their daughters. They also worship through the sign team, a ministry for the deaf & hearing both.
+                Nathaniel & Danielle Hollis work as leaders for sound ministry as well as IT (Information & Technology) for FPC. They are involved with the praise team along with their daughters, who also teach in Super Church. They also worship through the sign team, a ministry for the deaf & hearing both.
             </div>
                 <div class="picture-border">
                     <div class="staff-picture">
@@ -169,7 +169,7 @@
 
 
 <!-- Tom and Rhonda Boomsma -->
-    <div class="staff-element">
+    <div class="staff-element hidden-right">
         <div class="bio-text">
             <h2>
                 Brother & Sister Boomsma
@@ -191,13 +191,13 @@
 
 
 <!-- Robert and Stephanie Ehresman -->
-    <div class="staff-element">
+    <div class="staff-element hidden-left">
         <div class="bio-text">
             <h2>
                 Brother & Sister Ehresman
             </h2>
             <div class="text">
-                Robert & Stephanie are part of the praise team, teach the teen Sunday School class & are the youth leaders of FPC Knox. Their daughter, Chloe, teaches the primary Sunday School class.
+                Robert & Stephanie are part of the praise team & are the youth leaders of FPC Knox. Sis Ehresman & their daughter Chloe teach in Super church.
             </div>
             <div class="picture-border">
                 <div class="staff-picture">
@@ -214,7 +214,7 @@
 
 
     <!-- Lori and Terry Gardner -->
-    <div class="staff-element">
+    <div class="staff-element hidden-right">
         <div class="bio-text">
             <h2>
                 Brother & Sister Gardner
@@ -543,18 +543,18 @@
     <!-- service times  -->
     <a class="ban-services">Our Service Times</a>
     <div class="service-times">
-        <div class="service-spanish">
+        <div class="service-spanish hidden-right">
             <h2>¿Hablas español?
             </h2>
                 <div>¡Ningún problema! Podemos traducir para usted.
                 </div> 
         </div>
-            <div class="service-BFree">
+            <div class="service-BFree hidden-left">
             <h2> *New* <br>
                 B-Free From Addiction Meetings</h2>
             <div>Every Sunday @4:45pm</div>
         </div>
-        <div class="service">
+        <div class="service hidden-right">
             <h2>Sunday Mornings</h2>
             <div>Pre-Service Prayer 9:30am<br>
             Service 10am<br>
@@ -562,19 +562,19 @@
             Adult Service<br>
             after worship</div>
         </div>
-        <div class="service">
+        <div class="service hidden-left">
             <h2>Sunday Evenings</h2>
             <div>Pre-Service Prayer 5:30pm<br>
             Service 6pm<br>
             Food and Fellowship After Service
         </div>
         </div>
-        <div class="service">
+        <div class="service hidden-right">
             <h2>Tuesday Evenings</h2>
             <div>Pre-Service Prayer 6:30pm<br>
             Bible Study 7pm</div>
         </div>
-        <div class="service">
+        <div class="service hidden-left">
             <h2>Food Pantry</h2>
             <div>Every 1st and 3rd Wed.<br>
             10am to Noon</div>
@@ -592,7 +592,7 @@
                     <div class="testimonial">
                         <h2 class="name">Beatriz Alicia Dominguez San Gabriel</h2>
 
-                        <p>"I just want to say thank you because you have given me  the love of Christ that lives in you . I love you in the love of Christ. I don't know your language but I feel your love. Thank you pastor and thank you Jesus!"
+                        <p>"I just want to say thank you because you have given me the love of Christ that lives in you. I love you in the love of Christ. I don't know your language but I feel your love. Thank you Pastor and thank you Jesus!"
                             <br>
                             <br>
                             Solo queries decir gracias por que me han dado El amor de Christo Herman's no hallo su idiomatic pero siento su amor gracia pastores y gracia Jesus
@@ -604,7 +604,7 @@
                     <div class="testimonial">
                         <h2 class="name">Angela Ridley</h2>
 
-                        <p>I had an amzing experience here. I planned to attend a coupe of services while in town but ended up in a week long revival, and I couldn't have been more touched by God. I didn't want to leave! If you are looking for a church to call home that is filled with God's Spirit and great saints of God, this is the place!!!</p>
+                        <p>I had an amazing experience here. I planned to attend a couple of services while in town but ended up in a week long revival, and I couldn't have been more touched by God. I didn't want to leave! If you are looking for a church to call home that is filled with God's Spirit and great saints of God, this is the place!!!</p>
                     </div>
                 </div>
 
@@ -651,9 +651,46 @@
         menu.classList.remove("open");
     }
 }
+
+        // This creates the 'Watchman' that looks for elements on the screen
+
+const observer = new
+IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+
+    //if the element is visible on the screen...
+
+    if (entry.isIntersecting) {
+
+        //...add the 'show' class to trigger the CSS animation
+
+        entry.target.classList.add('show');
+        }
+    });
+}, {
+    threshold: 0.4,
+
+    // The element must be 40% (.4) visible before it triggers
+
+    rootMargin: '0px 0px -50px 0px'
+
+    //subtracts 50px from the bottom "trigger line"
+
+});
+
+const hiddenElements = document.querySelectorAll('.hidden-right');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+// This JS is for elements moving in from left
+
+const leftElements = document.querySelectorAll('.hidden-left');
+leftElements.forEach((el) =>
+observer.observe(el));
+
 </script>
 
     
 </body>
 </html> 
+
 
