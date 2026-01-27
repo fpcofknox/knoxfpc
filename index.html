@@ -114,7 +114,7 @@
 
 
 <!-- Pastor's picture and Bio -->
-    <div class="staff-element hidden-right show">
+    <div class="staff-element hidden-right">
         <div class="bio-text">
             <h2>
                 Pastor Jerry Patrick<br>
@@ -147,7 +147,7 @@
 
     <!-- staff pictures and bios -->
     <!-- Nate and Dani Hollis -->
-    <div class="staff-element hidden-left show">
+    <div class="staff-element hidden-left">
         <div class="bio-text">
             <h2>
                 Brother & Sister Hollis
@@ -169,7 +169,7 @@
 
 
 <!-- Tom and Rhonda Boomsma -->
-    <div class="staff-element hidden-right show">
+    <div class="staff-element hidden-right">
         <div class="bio-text">
             <h2>
                 Brother & Sister Boomsma
@@ -678,14 +678,15 @@ IntersectionObserver((entries) => {
 
 });
 
-const hiddenElements = document.querySelectorAll('.hidden-right');
+setTimeout(() => {
+    const hiddenElements = document.querySelectorAll('.hidden-right');
     hiddenElements.forEach((el) => observer.observe(el));
 
-// This JS is for elements moving in from left
+    const leftElements = document.querySelectorAll('.hidden-left');
+    leftElements.forEach((el) => observer.observe(el));
+}, 500); 
 
-const leftElements = document.querySelectorAll('.hidden-left');
-leftElements.forEach((el) =>
-observer.observe(el));
+// This waits 500ms (half a second) before starting
 
 </script>
 
