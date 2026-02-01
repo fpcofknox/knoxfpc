@@ -699,6 +699,78 @@ setTimeout(() => {
 
 
 
+// --- CONFIGURATION ---
+const GOOGLE_MAPS_LINK = "https://www.google.com/maps/dir/?api=1&destination=509+South+Roosevelt+Rd+Knox+IN+46534"; 
+const REVIVAL_START = new Date("February 15, 2026 10:00:00").getTime(); 
+const AD_EXPIRATION = new Date("February 18, 2026 22:00:00").getTime(); 
+const DROPBOX_IMG = "https://www.dropbox.com/scl/fi/lvo6lkv2iqdg0wblnvo26/IMG_20260131_194528_01.jpg?rlkey=g4vv6j31u1ak7wx8i9ufkazu6&st=ogffm1ez&raw=1";
+
+const adSpot = document.getElementById('church-events-ad');
+const adHidden = sessionStorage.getItem('revivalAdClosed');
+const now = new Date().getTime();
+
+if (adSpot && now < AD_EXPIRATION && adHidden !== 'true') {
+    
+    adSpot.innerHTML = `
+        <div id="ad-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 999999; opacity: 0; transition: opacity 0.8s ease; overflow: hidden;">
+            
+            <div id="revival-card" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 88%; max-width: 350px; background: white; border-radius: 15px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); overflow: hidden; box-sizing: border-box;">
+                
+                <button onclick="closeAd()" style="position: absolute; top: 10px; right: 10px; background: white; color: black; border: 2px solid #000; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; font-weight: bold; font-size: 20px; z-index: 1000001; display: flex; align-items: center; justify-content: center;">×</button>
+
+                <a href="${GOOGLE_MAPS_LINK}" target="_blank" style="text-decoration: none; display: block;">
+                    <img src="${DROPBOX_IMG}" alt="Revival" style="width: 100%; height: auto; display: block;">
+                    <div id="timer-bar" style="background: white; color: #b71c1c; padding: 15px; font-family: sans-serif; font-weight: bold; font-size: 1.1rem; text-align: center; border-top: 1px solid #eee;">
+                        Loading...
+                    </div>
+                </a>
+            </div>
+        </div>
+    `;
+
+    // LOCK the background from moving
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+
+    setTimeout(() => { 
+        const overlay = document.getElementById('ad-overlay');
+        if(overlay) overlay.style.opacity = '1'; 
+    }, 50);
+
+    const timerUpdate = setInterval(function() {
+        const currentTime = new Date().getTime();
+        const distance = REVIVAL_START - currentTime;
+        const bar = document.getElementById("timer-bar");
+
+        if (bar) {
+            if (distance < 0) {
+                bar.innerHTML = "📍 TAP FOR DIRECTIONS";
+                bar.style.backgroundColor = "#b71c1c";
+                bar.style.color = "white";
+            } else {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                bar.innerHTML = `${days}d : ${hours}h : ${minutes}m : ${seconds}s`;
+            }
+        }
+    }, 1000);
+}
+
+function closeAd() {
+    const overlay = document.getElementById('ad-overlay');
+    if (overlay) {
+        overlay.style.opacity = '0';
+        // UNLOCK the background
+        document.documentElement.style.overflow = '';
+        document.body.style.overflow = '';
+        setTimeout(() => { 
+            overlay.remove(); 
+            sessionStorage.setItem('revivalAdClosed', 'true'); 
+        }, 800);
+    }
+}
 
 
 
