@@ -697,31 +697,33 @@ setTimeout(() => {
 
 
 
-// --- CONFIGURATION ---
-// 1. When does the revival START? (The timer counts down to this)
+
+
+
+// --- CHURCH REVIVAL CONFIGURATION ---
+const GOOGLE_MAPS_LINK = "https://www.google.com/maps/place/First+Pentecostal+Church/@41.2848525,-86.6212165,17z/data=!3m1!4b1!4m6!3m5!1s0x88116122af25c4b5:0xc413fa04ff9069fb!8m2!3d41.2848525!4d-86.6186416!16s%2Fg%2F1td0k_9f?entry=ttu"; 
 const REVIVAL_START = new Date("February 15, 2026 19:00:00").getTime(); 
-
-// 2. When should the ad DISAPPEAR? (The ad stops showing after this)
 const AD_EXPIRATION = new Date("February 18, 2026 22:00:00").getTime(); 
-
-// 3. Your Links
-const GOOGLE_MAPS_LINK = "https://maps.google.com/?cid=11246608418481400315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ"; 
 const DROPBOX_IMG = "https://www.dropbox.com/scl/fi/lvo6lkv2iqdg0wblnvo26/IMG_20260131_194528_01.jpg?rlkey=g4vv6j31u1ak7wx8i9ufkazu6&st=ogffm1ez&raw=1";
 
 const adSpot = document.getElementById('church-events-ad');
 const adHidden = sessionStorage.getItem('revivalAdClosed');
 const now = new Date().getTime();
 
-// LOGIC: Show the ad only if we haven't reached the Expiration Date yet
+// Show ad only if before expiration and not closed by user
 if (adSpot && now < AD_EXPIRATION && adHidden !== 'true') {
     
     adSpot.innerHTML = `
         <div id="ad-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; opacity: 0; transition: opacity 1s ease; display: flex; align-items: center; justify-content: center;">
-            <div id="revival-card" style="position: relative; width: 85%; max-width: 450px; text-align: center;">
-                <button onclick="closeAd()" style="position: absolute; top: -15px; right: -15px; background: white; color: black; border: 2px solid black; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; font-weight: bold; font-size: 24px; z-index: 10001; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">×</button>
-                <a href="${GOOGLE_MAPS_LINK}" target="_blank" style="text-decoration: none;">
-                    <img src="${DROPBOX_IMG}" alt="Revival" style="width: 100%; border-radius: 15px 15px 0 0; display: block; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-                    <div id="timer-bar" style="background: white; color: #b71c1c; padding: 18px; border-radius: 0 0 15px 15px; font-family: sans-serif; font-weight: bold; font-size: 1.2rem; border-top: 1px solid #eee;">
+            
+            <div id="revival-card" style="position: relative; width: 90%; max-width: 380px; text-align: center; margin: 0 auto;">
+                
+                <button onclick="closeAd()" style="position: absolute; top: 10px; right: 10px; background: white; color: black; border: 2px solid black; border-radius: 50%; width: 38px; height: 38px; cursor: pointer; font-weight: bold; font-size: 22px; z-index: 10001; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">×</button>
+
+                <a href="${GOOGLE_MAPS_LINK}" target="_blank" style="text-decoration: none; display: block;">
+                    <img src="${DROPBOX_IMG}" alt="Revival" style="width: 100%; height: auto; border-radius: 15px 15px 0 0; display: block; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                    
+                    <div id="timer-bar" style="background: white; color: #b71c1c; padding: 15px; border-radius: 0 0 15px 15px; font-family: sans-serif; font-weight: bold; font-size: 1.1rem; border-top: 1px solid #eee;">
                         Loading...
                     </div>
                 </a>
@@ -729,22 +731,26 @@ if (adSpot && now < AD_EXPIRATION && adHidden !== 'true') {
         </div>
     `;
 
-    setTimeout(() => { document.getElementById('ad-overlay').style.opacity = '1'; }, 100);
+    // Smooth Fade-In
+    setTimeout(() => { 
+        const overlay = document.getElementById('ad-overlay');
+        if(overlay) overlay.style.opacity = '1'; 
+    }, 100);
 
+    // Live Timer Update
     const timerUpdate = setInterval(function() {
         const currentTime = new Date().getTime();
         const distance = REVIVAL_START - currentTime;
-
         const bar = document.getElementById("timer-bar");
+
         if (!bar) return;
 
         if (distance < 0) {
-            // If the revival has already started, show directions until the expiration date
             bar.innerHTML = "📍 TAP FOR DIRECTIONS";
             bar.style.backgroundColor = "#b71c1c";
             bar.style.color = "white";
+            // Optional: clearInterval(timerUpdate); // Keep it running if you want the button to stay
         } else {
-            // Still counting down to the opening night
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -754,14 +760,17 @@ if (adSpot && now < AD_EXPIRATION && adHidden !== 'true') {
     }, 1000);
 }
 
+// Close function - fades out and removes element
 function closeAd() {
     const overlay = document.getElementById('ad-overlay');
     if (overlay) {
         overlay.style.opacity = '0';
-        setTimeout(() => { overlay.remove(); sessionStorage.setItem('revivalAdClosed', 'true'); }, 1000);
+        setTimeout(() => { 
+            overlay.remove(); 
+            sessionStorage.setItem('revivalAdClosed', 'true'); 
+        }, 1000);
     }
 }
-
 
 </script>
 
