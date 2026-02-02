@@ -800,6 +800,54 @@ function closeAd() {
 
 
 
+
+
+// JS for pic slider 
+
+// 1. LIST YOUR DROPBOX LINKS HERE
+const slides = [
+    "https://www.dropbox.com/scl/fi/gm9pulexjllvafihsqnfi/worship4.jpg?rlkey=oe8tg66iglvzhlpfkd8mwz2mg&st=301drauo&raw=1",
+    "https://www.dropbox.com/scl/fi/mknqthecp2c249lbqdc0a/worship6.jpg?rlkey=mrjsuz3lf5fi4po37rms1bqmy&st=vad15u3s&raw=1",
+    "https://www.dropbox.com/scl/fi/o63bnfvozpypnadfb1xnv/worship7.jpg?rlkey=mzs5rmnbcdcszlvm1wi9l1toe&st=0t52m5ch&raw=1"
+];
+
+let currentIndex = 0;
+const sliderFrame = document.getElementById('main-slider');
+
+// 2. INITIALIZE SLIDER
+function initSlider() {
+    sliderFrame.innerHTML = ""; // Clear the loading text
+    
+    slides.forEach((url, index) => {
+        const img = document.createElement('img');
+        img.src = url;
+        if (index === 0) img.classList.add('active');
+        sliderFrame.appendChild(img);
+    });
+}
+
+// 3. CHANGE SLIDE FUNCTION
+function changeSlide(direction) {
+    const images = sliderFrame.getElementsByTagName('img');
+    images[currentIndex].classList.remove('active');
+    
+    currentIndex += direction;
+    
+    // Loop back to start or end
+    if (currentIndex >= images.length) currentIndex = 0;
+    if (currentIndex < 0) currentIndex = images.length - 1;
+    
+    images[currentIndex].classList.add('active');
+}
+
+// Start it up!
+initSlider();
+
+// Optional: Auto-play every 5 seconds
+setInterval(() => changeSlide(1), 5000);
+
+
+
 </script>
 
     
