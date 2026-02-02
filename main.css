@@ -162,6 +162,62 @@ body{
 
 
 /* <!-- pictures of people in worship service --> */
+
+
+
+/* <!-- JS pic slider --> */
+
+.slider-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.slider-frame img {
+    width: 100%;
+    display: none; /* Hidden by default, JS shows them one by one */
+    height: auto;
+    animation: fadeIn 0.8s;
+}
+
+.slider-frame img.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none; /* Allows clicking through the div to the buttons */
+}
+
+.nav-btn {
+    background: rgba(255,255,255,0.7);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    pointer-events: auto;
+    border-radius: 5px;
+}
+
+
+
+
+
+
 .worship-pic {
     overflow: hidden;
     margin: 20px;
