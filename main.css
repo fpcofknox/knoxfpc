@@ -664,6 +664,24 @@ Button:hover {
 
 /*CSS for JS: elements sliding into screen*/
 
+
+
+/* This makes all slider images invisible by default */
+#main-slider img {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+/* This makes ONLY the active image show up */
+#main-slider img.active {
+    display: block;
+}
+
+
+
+
+
 /* This is the starting position: invisible and 100px to the right*/
 
 
